@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome  -->
+    <script src="https://kit.fontawesome.com/1bc2765d38.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/global.css">
+    <script type="text/javascript" src="/js/global.js"></script>
+    <title>Home</title>
+</head>
+<body>
+    <!-- Navbar Starts -->
+    <nav class="navbar" id="navbar">
+        <ul>
+            <li class="nav-logo"> <img src="/assets/images/logo.jpg" alt="Website Logo"> </li>
+        </ul>
+        <ul class="navbar-dropdown">
+            <li> <a href="#">Home</a> </li>
+            <li> <a href="#">About Us</a> </li>
+            <li> <a href="#">Contact Us</a> </li>
+            <li> <a href="#">Banking Details</a> </li>
+            <li>
+                <div class="dropdown">
+                    <button onclick="toggleSubDropdown()" class="dropdown-toggle">
+                        <i id="dropdownIcon" class="fa-solid fa-plus"></i> &nbsp Services
+                    </button>
+                    <ul style="display: none;" id="dropdownMenu" class="dropdown-menu">
+                        <li><a href="#">Service 1</a></li>
+                        <li><a href="#">Service 2</a></li>
+                        <li><a href="#">Service 3</a></li>
+                    </ul>
+                </div>
+                
+            </li>
+        </ul>
+        <ul class="navbar-subdivision">
+            <li> <button>Donate</button> </li>
+            <li id="icon-bars"> <i  onclick="toggleDropdown('navbar-dropdown')" class="fa-solid fa-bars"></i> </li>
+        </ul>
+    </nav>
+    <!-- Navbar ends -->
+</body>
+</html>
