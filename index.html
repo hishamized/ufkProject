@@ -1,45 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Font Awesome  -->
-    <script src="https://kit.fontawesome.com/1bc2765d38.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/css/global.css">
+    <script
+      src="https://kit.fontawesome.com/1bc2765d38.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/global.css" />
     <script type="text/javascript" src="/js/global.js"></script>
     <title>Home</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Navbar Starts -->
     <nav class="navbar" id="navbar">
-        <ul>
-            <li class="nav-logo"> <img src="/assets/images/logo.jpg" alt="Website Logo"> </li>
-        </ul>
-        <ul class="navbar-dropdown">
-            <li> <a href="#">Home</a> </li>
-            <li> <a href="#">About Us</a> </li>
-            <li> <a href="#">Contact Us</a> </li>
-            <li> <a href="#">Banking Details</a> </li>
-            <li>
-                <div class="dropdown">
-                    <button onclick="toggleSubDropdown()" class="dropdown-toggle">
-                        <i id="dropdownIcon" class="fa-solid fa-plus"></i> &nbsp Services
-                    </button>
-                    <ul style="display: none;" id="dropdownMenu" class="dropdown-menu">
-                        <li><a href="#">Service 1</a></li>
-                        <li><a href="#">Service 2</a></li>
-                        <li><a href="#">Service 3</a></li>
-                    </ul>
-                </div>
-                
-            </li>
-        </ul>
-        <ul class="navbar-subdivision">
-            <li> <button>Donate</button> </li>
-            <li id="icon-bars"> <i  onclick="toggleDropdown('navbar-dropdown')" class="fa-solid fa-bars"></i> </li>
-        </ul>
+      <ul>
+        <li class="nav-logo">
+          <img src="/assets/images/logo.jpg" alt="Website Logo" />
+        </li>
+      </ul>
+      <ul class="navbar-dropdown">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Banking Details</a></li>
+        <li>
+          <div class="dropdown">
+            <button onclick="toggleSubDropdown()" class="dropdown-toggle">
+              <i id="dropdownIcon" class="fa-solid fa-plus"></i> &nbsp Services
+            </button>
+            <ul style="display: none" id="dropdownMenu" class="dropdown-menu">
+              <li><a href="#">Service 1</a></li>
+              <li><a href="#">Service 2</a></li>
+              <li><a href="#">Service 3</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <ul class="navbar-subdivision">
+        <li><button>Donate</button></li>
+        <li id="icon-bars">
+          <i
+            onclick="toggleDropdown('navbar-dropdown')"
+            class="fa-solid fa-bars"
+          ></i>
+        </li>
+      </ul>
     </nav>
     <!-- Navbar ends -->
-</body>
+
+    <!-- header starts -->
+    <header class="header">
+      <p id="data">50,000 + Souls Impacted</p>
+      <h1>Extend a hand to those in need, let's uplift together.</h1>
+      <p>
+        We are a non-profit organization that aims to uplift the community by
+        providing basic necessities to those in need. We believe that everyone
+        deserves a chance to live a better life and we are here to help them
+        achieve that.
+      </p>
+      <div class="flex-row">
+        <button class="button-light">Learn More</button>
+        <button class="button-success">Donate Now</button>
+      </div>
+    </header>
+    <!-- header ends -->
+
+    <!-- Footer Starts -->
+    <footer class="footer">
+      <div class="company-name">
+        <img src="/assets/images/logo.jpg" alt="Website Logo" />
+        <h4>Company Title</h4>
+      </div>
+        <ul class="contact-details">
+          <li>
+            <i class="fa-solid fa-location-dot"></i>&nbspAddress, Srinagar -
+            Jammu and Kashmir - 190001
+          </li>
+          <li><i class="fa-solid fa-phone"></i>&nbsp+91 1234567890</li>
+          <li><i class="fa-solid fa-phone"></i>&nbsp+91 3234567290</li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>&nbspcompanyEmail@example.com
+          </li>
+        </ul>
+        <div class="social-media-container">
+          <h3>Follow Us On</h3>
+          <ul class="social-media">
+            <li><i class="fa-brands fa-facebook"></i>&nbspFacebook</li>
+            <li><i class="fa-brands fa-instagram"></i>&nbspInstagram</li>
+            <li><i class="fa-brands fa-twitter"></i>&nbspTwitter</li>
+            <li><i class="fa-brands fa-youtube"></i>&nbspYoutube</li>
+          </ul>
+        </div>
+        <ul class="navigation">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Banking Details</a></li>
+        </ul>
+      <div class="ending">
+        <h3>All Donations are Tax-Deductable</h3>
+        <p>© 2021 Company Title. All Rights Reserved</p>
+        <button class="button-success">Donate Now</button>
+      </div>
+      <ul class="note">
+        <li>
+          Designed and developed with <i class="fa-solid fa-heart"></i> by  UFK
+          Solutions
+        </li>
+      </ul>
+    </footer>
+    <!-- Footer Ends -->
+  </body>
 </html>

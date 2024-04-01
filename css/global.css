@@ -1,10 +1,46 @@
 *{ margin: 0%; }
 :root {
     --var-primary: #f1f1f1;
+    --var-text: #ffffff;
     --var-btn-success: #28a745;
+    --var-btn-danger: #dc3545;
+    --var-btn-warning: #ffc107;
+    --var-btn-info: #17a2b8;
+    --var-btn-light: #f8f9fa;
     --var-linebreak: rgba(128,128,128,.14);
     --var-standard-font-size: 16px;
 }
+/* Utility Classes start */
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+.button-success{
+    background-color: var(--var-btn-success);
+    border: none;
+    font-size: 15px;
+    color: var(--var-primary);
+    padding: 15px 15px;
+    border-radius: 5px;    
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 4px 14px 0 var(--var-btn-success);
+
+}
+.button-light{
+    background-color: var(--var-btn-light);
+    border: none;
+    font-size: 15px;
+    color: #000000;
+    padding: 15px 15px;
+    border-radius: 5px;    
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 4px 14px 0 var(--var-btn-light);
+
+}
+/* Utility Classes end */
 body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -99,27 +135,107 @@ ul li a{
 }
 
 
-/* .navbar .sub-dropdown{
+/* Header CSS starts */
+.header{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/featured/?kids');
+    background-size: cover;
+    background-position: center;
+    padding: 45px 25px;
+    color: var(--var-text);
+    }
+    .header h1{
+        font-size: 40px;
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+    .header #data{
+       color: var(--var-btn-warning);
+       border-radius: 2px;
+       border: 1px solid var(--var-btn-warning);
+       max-width: fit-content;
+       padding: 5px;
+       backdrop-filter: blur(10px);
+       font-weight: 700; 
+    }
+/* Header CSS Ends */
+
+/* Footer Css starts */
+.footer{
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+    justify-content: center;
+    align-items: center;
+    padding: 45px 25px;
+    color: var(--var-text);
+    background-color: #000000;
+}
+.footer .company-name{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.footer .company-name img{
+    width: 20%;
+
+}
+.footer .contact-details{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0%;
+}
+.footer .social-media-container{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 100%;
+}
+.footer .social-media-container h3{
+    text-transform: capitalize;
+}
+.footer .social-media{
     display: flex;
     flex-direction: column;
     row-gap: 10px;
-    padding: 5px 0px;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0%;
 }
-.navbar .sub-dropdown summary{
-    list-style: none;
+.footer .navigation a{
+    color: var(--var-text);
+
 }
-.navbar .sub-dropdown ul {
+.footer .navigation{
     display: flex;
     flex-direction: column;
     row-gap: 10px;
-    padding: 5px 0px;
-    margin-left: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+     padding: 0%;
 }
-.navbar .sub-dropdown ul li {
-    border-bottom: 1px solid var(--var-linebreak);
-    margin: 5px 0px;
-    padding: 2px 0px;
-} */
+.footer .ending{
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+.footer .note{
+    text-transform: capitalize;
+}
+/* Footer Css ends */
 
 /* Media query only screen for desktop */
 @media only screen and (min-width: 768px){
@@ -139,4 +255,55 @@ ul li a{
    #icon-bars{
     display: none;
    }
+
+   .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "company contact"
+      "social navigation"
+      "ending ending"
+      "note note";
+    row-gap: 40px;
+    column-gap: 50px;
+    padding: 45px 25px;
+    overflow: hidden;
+  }
+
+  .footer .company-name {
+    grid-area: company;
+    justify-self: flex-start;
+    align-self: center;
+  }
+
+  .footer .contact-details {
+    grid-area: contact;
+    justify-self: flex-start;
+    align-self: flex-start;
+  }
+
+  .footer .social-media-container {
+    grid-area: social;
+    justify-self: flex-start;
+    align-self: flex-start;
+  }
+
+  .footer .navigation {
+    grid-area: navigation;
+    justify-self: flex-start;
+    align-self: flex-start;
+  }
+
+  .footer .ending {
+    grid-area: ending;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .footer .note {
+    grid-area: note;
+    padding: 0%;
+    text-align: center;
+  }
 }

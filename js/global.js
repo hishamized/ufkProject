@@ -40,3 +40,24 @@ document.addEventListener("click", function(event) {
     }
 });
 
+// Header Js starts
+window.addEventListener("load", function() {
+  var navbarHeight = document.querySelector(".navbar").offsetHeight;
+  var header = document.querySelector(".header");
+  header.style.marginTop = navbarHeight + "px";
+  var images = [
+    "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/featured/?kids')",
+    "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/featured/?poor')",
+    "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/featured/?poverty')"
+  ];
+  var currentIndex = 0;
+
+  function changeBackgroundImage() {
+    header.style.backgroundImage = images[currentIndex];
+    currentIndex = (currentIndex + 1) % images.length;
+  }
+
+  setInterval(changeBackgroundImage, 3000);
+});
+// Header Js ends
+
