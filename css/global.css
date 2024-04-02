@@ -258,41 +258,50 @@ ul li a{
 
    .footer {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     grid-template-areas: 
-      "company contact"
-      "social navigation"
-      "ending ending"
-      "note note";
+      "company company company"
+      "contact social navigation"
+      "ending ending ending"
+      "note note note";
     row-gap: 40px;
     column-gap: 50px;
-    padding: 45px 25px;
+    padding: 65px 45px;
     overflow: hidden;
+    place-items: center;
   }
 
   .footer .company-name {
     grid-area: company;
-    justify-self: flex-start;
-    align-self: center;
+    justify-self: center;
+    align-self: flex-start;
+    align-items: center;
+    justify-content: center;
   }
 
   .footer .contact-details {
     grid-area: contact;
-    justify-self: flex-start;
+    justify-self: center;
     align-self: flex-start;
+    align-items: flex-start;
   }
 
   .footer .social-media-container {
     grid-area: social;
-    justify-self: flex-start;
+    justify-self: center;
     align-self: flex-start;
+    align-items: center;
+  }
+  .footer .social-media{
+    align-items: center;
   }
 
   .footer .navigation {
     grid-area: navigation;
-    justify-self: flex-start;
+    justify-self: center;
     align-self: flex-start;
+    align-items: flex-end;
   }
 
   .footer .ending {
