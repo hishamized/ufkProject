@@ -2,6 +2,8 @@
 :root {
     --var-primary: #f1f1f1;
     --var-text: #ffffff;
+    --var-light-text: rgba(68, 68, 68, 1);
+    --var-gray-bg: #f2f3f7;
     --var-btn-success: #28a745;
     --var-btn-danger: #dc3545;
     --var-btn-warning: #ffc107;
@@ -26,7 +28,7 @@
     text-transform: uppercase;
     font-weight: bold;
     box-shadow: 0 4px 14px 0 var(--var-btn-success);
-
+    cursor: pointer;
 }
 .button-light{
     background-color: var(--var-btn-light);
@@ -38,7 +40,7 @@
     text-transform: uppercase;
     font-weight: bold;
     box-shadow: 0 4px 14px 0 var(--var-btn-light);
-
+    cursor: pointer;
 }
 /* Utility Classes end */
 body{
@@ -237,6 +239,99 @@ ul li a{
 }
 /* Footer Css ends */
 
+/* INtroduction section css starts */
+.introduction-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    padding: 45px 25px;
+    justify-content: center;
+    align-items: center;
+}
+.introduction-container .youtube-iframe iframe{
+    width: 100%;
+    border-radius: 10px;
+}
+.introduction-container .button-set{
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0px;
+}
+.introduction-text{
+    text-align: justify;
+}
+
+.introduction-text h3{
+    margin: 25px 0px;
+    font-size: x-large;
+}
+.introduction-text p{
+    color: var(--var-light-text);
+}
+/* INtroduction section css ends */
+
+/* Purpose Section CSS starts */
+.purpose-container{
+    text-align: center;
+    padding: 20px 30px;
+    background-color: var(--var-gray-bg);
+}
+.purpose-container h2{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.purpose-container p{
+    text-align: justify;
+    margin: 25px 0px;
+    color: var(--var-light-text);
+}
+/* Purpose Section CSS ends */
+
+/* Cards section css starts */
+.limited {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Number of lines to show */
+    -webkit-box-orient: vertical;
+  }
+  .cards-conatainer{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    gap: 80px;
+    background-color: var(--var-gray-bg);
+    padding: 45px 35px;
+  }
+  .card-container{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     row-gap: 25px;
+  }
+  .card-container img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  .card-container h4{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+  .card-container p{
+    color: var(--var-light-text);
+  }
+  .card-container .btn-small{
+    font: small;
+    max-width: fir-content;
+  }
+  
+/* Cards section css ends */
+
 /* Media query only screen for desktop */
 @media only screen and (min-width: 768px){
    .navbar{
@@ -315,4 +410,40 @@ ul li a{
     padding: 0%;
     text-align: center;
   }
+  .introduction-container{
+    flex-direction: row;
+    column-gap: 50px;
+    padding: 50px 100px;
+  }
+.introduction-container .youtube-iframe{
+    width: 100%;
+}
+.introduction-container .youtube-iframe iframe{
+    width: 100%;
+    border-radius: 10px;
+}
+.introduction-container .introduction-text{
+    width: 100%;
+}
+.introduction-container .button-set{
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 25px 0px;
+}
+.purpose-container {
+   padding-left: 20rem;
+   padding-right: 20rem;
+}
+
+.cards-conatainer{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.card-container img{
+    height: 300px;
+}
+.limited{
+    -webkit-line-clamp: 8;
+}
 }

@@ -61,3 +61,19 @@ window.addEventListener("load", function() {
 });
 // Header Js ends
 
+// Cards section js starts
+function toggleText(cardIndex, buttonId) {
+  var content = document.querySelectorAll('.content')[cardIndex - 1];
+  var buttonText = document.getElementById(buttonId);
+  
+  if (content.classList.contains('limited')) {
+    content.classList.remove('limited');
+    buttonText.textContent = 'Read Less';
+  } else {
+    content.classList.add('limited');
+    buttonText.textContent = 'Read More';
+  }
+}
+
+// Cards section js ends
+
