@@ -1,9 +1,14 @@
 *{ margin: 0%; }
+a{
+    text-decoration: none;
+}
 :root {
     --var-primary: #f1f1f1;
     --var-text: #ffffff;
+    --var-theme-blue: #2099a9;
     --var-light-text: rgba(68, 68, 68, 1);
     --var-gray-bg: #f2f3f7;
+    --var-gray-border: rgba(128, 128, 128, 0.603);
     --var-btn-success: #28a745;
     --var-btn-danger: #dc3545;
     --var-btn-warning: #ffc107;
@@ -17,6 +22,11 @@
     display: flex;
     flex-direction: row;
     column-gap: 10px;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
 }
 .button-success{
     background-color: var(--var-btn-success);
@@ -42,6 +52,19 @@
     box-shadow: 0 4px 14px 0 var(--var-btn-light);
     cursor: pointer;
 }
+.button-theme{
+    background-color: var(--var-theme-blue);
+    border: none;
+    font-size: 15px;
+    color: var(--var-primary);
+    padding: 15px 15px;
+    border-radius: 5px;    
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 4px 14px 0 var(--var-theme-blue);
+    cursor: pointer;
+
+}
 /* Utility Classes end */
 body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -63,7 +86,7 @@ ul li a{
     align-items: center;
     position: fixed;
     top: 0;
-    padding: 5px 0px;
+    padding: 20px 0px;
     z-index: 2;
     width: 100%;
 }
@@ -76,7 +99,7 @@ ul li a{
     align-items: center;
 }
 .navbar .nav-logo img{
-    width: 35%;
+    width: 65%;
 }
 .navbar .navbar-subdivision li button{
  background-color: var(--var-btn-success);
@@ -184,7 +207,8 @@ ul li a{
 }
 .footer .company-name img{
     width: 20%;
-
+    border-radius: 50%;
+    object-fit: cover;
 }
 .footer .contact-details{
     display: flex;
@@ -268,7 +292,7 @@ ul li a{
 .introduction-text p{
     color: var(--var-light-text);
 }
-/* INtroduction section css ends */
+/* Introduction section css ends */
 
 /* Purpose Section CSS starts */
 .purpose-container{
@@ -289,11 +313,24 @@ ul li a{
 /* Purpose Section CSS ends */
 
 /* Cards section css starts */
+.cards-heading{
+    text-align: center;
+    padding: 20px 30px;
+    background-color: var(--var-gray-bg);
+    border-top: 1px solid var(--var-linebreak);
+}
 .limited {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 4; /* Number of lines to show */
+    -webkit-box-orient: vertical;
+  }
+  .extended-limit{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 12; /* Number of lines to show */
     -webkit-box-orient: vertical;
   }
   .cards-conatainer{
@@ -321,6 +358,11 @@ ul li a{
     font-size: 20px;
     font-weight: 700;
     text-transform: capitalize;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* Number of lines to show */
+    -webkit-box-orient: vertical;
   }
   .card-container p{
     color: var(--var-light-text);
@@ -331,6 +373,91 @@ ul li a{
   }
   
 /* Cards section css ends */
+
+/* Staticstics section css starts */
+.statistics-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--var-gray-bg);
+    padding: 30px 30px;
+    row-gap: 50px;
+}
+.statistics-container .statistic{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
+    padding: 20px;
+    background-color: var(--var-btn-light);
+    height: 200px;
+    width: 200px;
+    font-size: large;
+    border-radius: 5px;
+    border: 1px solid var(--var-gray-border);
+    box-shadow: 0 4px 14px 0 rgba(80, 80, 80, 0.5);
+}
+.statistics-container .statistic h3{
+    font-size: xx-large;
+    font-weight: 800;
+}
+.statistics-container .statistic i{
+    font-size: xx-large;
+}
+/* Staticstics section css ends */
+
+/* Testimonials section css starts */
+.testimonials-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 30px;
+    background-color: var(--var-gray-bg);
+    row-gap: 20px;
+}
+.testimonials-container .testimonial{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+row-gap: 25px;
+background-color: #FFFFFF;
+padding: 30px;
+}
+.testimonials-container .testimonial p{
+    color: var(--var-light-text);
+    font-style: italic; 
+}
+.testimonials-container .testimonial img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.testimonials-container .navigation-buttons{
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+}
+.testimonials-container .navigation-buttons button{
+    background-color: var(--var-btn-success);
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .5s;
+}
+.testimonials-container .navigation-buttons button:hover{
+    background-color: var(--var-btn-danger);
+    transform: scale(1.1);
+}
+.testimonials-container .navigation-buttons button i{
+    color: #FFFFFF;
+}
+/* Testimonials section css ends */
 
 /* Media query only screen for desktop */
 @media only screen and (min-width: 768px){
@@ -347,6 +474,12 @@ ul li a{
     box-shadow: none;
     border-bottom: none;
    }
+   .navbar .nav-logo img{
+    width: 25%;
+}
+.navbar .nav-logo-container{
+    width: 100%;
+}
    #icon-bars{
     display: none;
    }
@@ -445,5 +578,14 @@ ul li a{
 }
 .limited{
     -webkit-line-clamp: 8;
+}
+
+.statistics-container{
+    flex-direction: row;
+    column-gap: 50px;
+    padding: 50px 100px;
+}
+.statistics-container .statistic h3{
+    font-weight: 700;
 }
 }

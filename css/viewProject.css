@@ -1,0 +1,27 @@
+.project-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    row-gap: 40px;
+    margin-bottom: 50px;
+    padding: 50px 25px;
+}
+.project-container .project-details{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 20px 10px;
+}
+.project-container .project-details p{
+    color: var(--var-light-text);
+    text-align: justify;
+}
+.project-container .project-image img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}

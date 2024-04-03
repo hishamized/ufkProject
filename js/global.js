@@ -1,4 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {});
 function toggleDropdown(className) {
   var dropdowns = document.getElementsByClassName(className)[0];
   var iconBars = document.getElementById("icon-bars");
@@ -68,12 +67,105 @@ function toggleText(cardIndex, buttonId) {
   
   if (content.classList.contains('limited')) {
     content.classList.remove('limited');
+    content.classList.add('extended-limit');
     buttonText.textContent = 'Read Less';
   } else {
     content.classList.add('limited');
+    content.classList.remove('extended-limit');
     buttonText.textContent = 'Read More';
   }
 }
 
 // Cards section js ends
+
+// Statistics section js starts
+// JavaScript
+document.addEventListener('DOMContentLoaded', function() {
+  const statistics = document.querySelectorAll('.statistic');
+
+  const options = {
+    root: null,
+    threshold: 0,
+    rootMargin: '0px'
+  };
+
+  const observer = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const target = entry.target;
+        const targetValue = parseInt(target.dataset.value);
+        const currentCount = parseInt(target.querySelector('h3').innerText);
+
+        let start = 0;
+        const duration = 1000;
+        const step = Math.ceil(targetValue / duration * 10);
+
+        const countUp = () => {
+          const nextValue = Math.min(start + step, targetValue);
+          target.querySelector('h3').innerText = nextValue.toLocaleString();
+          start = nextValue;
+          if (start < targetValue) {
+            requestAnimationFrame(countUp);
+          }
+        };
+
+        countUp();
+
+        observer.unobserve(target);
+      }
+    });
+  }, options);
+
+  statistics.forEach(statistic => {
+    observer.observe(statistic);
+  });
+});
+
+// Statistics section js ends
+
+// Testimonials section js starts
+  // JavaScript function to initialize testimonials
+  function initializeTestimonials() {
+    // Get all testimonials
+    var testimonials = document.querySelectorAll('.testimonial');
+    
+    // Hide all testimonials except the first one
+    for (var i = 1; i < testimonials.length; i++) {
+      testimonials[i].style.display = 'none';
+    }
+  }
+  
+  // Call the initializeTestimonials function on page load
+  window.addEventListener('load', initializeTestimonials);
+  // JavaScript function to navigate testimonials
+  function navigateTestimonials(direction) {
+    // Get all testimonials
+    var testimonials = document.querySelectorAll('.testimonial');
+    
+    // Find the currently visible testimonial
+    var visibleTestimonialIndex;
+    for (var i = 0; i < testimonials.length; i++) {
+      if (testimonials[i].style.display !== 'none') {
+        visibleTestimonialIndex = i;
+        break;
+      }
+    }
+    
+    // Hide all testimonials
+    testimonials.forEach(function(testimonial) {
+      testimonial.style.display = 'none';
+    });
+    
+    // Calculate the index of the next/previous testimonial
+    var nextTestimonialIndex;
+    if (direction === 'next') {
+      nextTestimonialIndex = (visibleTestimonialIndex + 1) % testimonials.length;
+    } else if (direction === 'prev') {
+      nextTestimonialIndex = (visibleTestimonialIndex - 1 + testimonials.length) % testimonials.length;
+    }
+    
+    // Display the next/previous testimonial
+    testimonials[nextTestimonialIndex].style.display = 'flex';
+  }
+// Testimonials section js ends
 

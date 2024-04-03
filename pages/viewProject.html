@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <!-- Font Awesome  -->
+      <script
+        src="https://kit.fontawesome.com/1bc2765d38.js"
+        crossorigin="anonymous"
+      ></script>
+      <link rel="stylesheet" href="../css/global.css" />
+      <script type="text/javascript" src="../js/global.js"></script>
+        <link rel="stylesheet" href="../css/viewProject.css" />
+        <script type="text/javascript" src="../js/viewProject.js"></script>
+      <title>View Project</title>
+    </head>
+  </head>
+  <body>
+    <!-- Navbar Starts -->
+    <nav class="navbar" id="navbar">
+      <ul class="nav-logo-container">
+        <li class="nav-logo">
+          <img src="../assets/images/navLogo.png" alt="Website Logo" />
+        </li>
+      </ul>
+      <ul class="navbar-dropdown">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Banking Details</a></li>
+        <li>
+          <div class="dropdown">
+            <button onclick="toggleSubDropdown()" class="dropdown-toggle">
+              <i id="dropdownIcon" class="fa-solid fa-plus"></i> &nbsp Services
+            </button>
+            <ul style="display: none" id="dropdownMenu" class="dropdown-menu">
+              <li><a href="#">Service 1</a></li>
+              <li><a href="#">Service 2</a></li>
+              <li><a href="#">Service 3</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <ul class="navbar-subdivision">
+        <li><button>Donate</button></li>
+        <li id="icon-bars">
+          <i
+            onclick="toggleDropdown('navbar-dropdown')"
+            class="fa-solid fa-bars"
+          ></i>
+        </li>
+      </ul>
+    </nav>
+    <!-- Navbar ends -->
+
+    <!-- Project Section Starts -->
+    <div class="project-container">
+        <div class="project-image">
+          <img src="https://source.unsplash.com/featured/?project" alt="Project Image" />
+        </div>
+        <div class="project-details">
+          <h1>Project Title</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            tincidunt, nunc nec ultricies fermentum, nunc nisl lacinia turpis,
+            vel luctus diam nunc a nunc. Nullam nec nunc nec nunc ultricies
+            fermentum, nunc nisl lacinia turpis, vel luctus diam nunc a nunc.
+            Nullam nec nunc nec nunc ultricies fermentum, nunc nisl lacinia
+            turpis, vel luctus diam nunc a nunc. Nullam nec nunc nec nunc
+            ultricies fermentum, nunc nisl lacinia turpis, vel luctus diam nunc
+            a nunc. Nullam nec nunc nec nunc ultricies fermentum, nunc nisl
+            lacinia turpis, vel luctus diam nunc a nunc. Nullam nec nunc nec
+            nunc ultricies fermentum, nunc nisl lacinia turpis, vel luctus diam
+            nunc a nunc. Nullam nec nunc nec nunc ultricies fermentum, nunc nisl
+            lacinia turpis, vel luctus diam nunc a nunc. Nullam nec nunc nec
+            nunc ultricies fermentum, nunc nisl lacinia turpis, vel luctus diam
+            nunc a nunc. Nullam nec nunc nec nunc ultricies fermentum, nunc nisl
+            lacinia turpis, vel luctus diam nunc a nunc. Nullam nec nunc nec
+            nunc ultricies fermentum, nunc nisl lacinia turpis, vel luctus diam
+            nunc a nunc. Nullam nec nunc nec nunc ultricies fermentum, nunc nisl
+            lacinia turpis, vel luctus diam nunc a nunc. Nullam nec nunc nec
+            nunc ultricies fermentum, nunc nisl lacinia turpis, vel luctus diam
+            nunc a nunc. Nullam nec nunc nec nunc ultricies fermentum, nunc nisl
+            lacinia turpis, vel luctus diam nunc a nunc. Nullam nec nunc nec
+            nunc ultricies
+          </p>
+        </div>
+        <div class="project-donate">
+            <button class="button-success">Donate Now</button>
+          </div>
+      </div>
+    <!-- Project Section Ends -->
+
+    <!-- Footer Starts -->
+    <footer class="footer">
+      <div class="company-name">
+        <img src="../assets/images/logo3.png" alt="Website Logo" />
+        <h4>Company Title</h4>
+      </div>
+      <ul class="contact-details">
+        <li>
+          <i class="fa-solid fa-location-dot"></i>&nbspAddress, Srinagar - Jammu
+          and Kashmir - 190001
+        </li>
+        <li><i class="fa-solid fa-phone"></i>&nbsp+91 1234567890</li>
+        <li><i class="fa-solid fa-phone"></i>&nbsp+91 3234567290</li>
+        <li>
+          <i class="fa-solid fa-envelope"></i>&nbspcompanyEmail@example.com
+        </li>
+      </ul>
+      <div class="social-media-container">
+        <h3>Follow Us On</h3>
+        <ul class="social-media">
+          <li><i class="fa-brands fa-facebook"></i>&nbspFacebook</li>
+          <li><i class="fa-brands fa-instagram"></i>&nbspInstagram</li>
+          <li><i class="fa-brands fa-twitter"></i>&nbspTwitter</li>
+          <li><i class="fa-brands fa-youtube"></i>&nbspYoutube</li>
+        </ul>
+      </div>
+      <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Banking Details</a></li>
+      </ul>
+      <div class="ending">
+        <h3>All Donations are Tax-Deductable</h3>
+        <p>© 2021 Company Title. All Rights Reserved</p>
+        <button class="button-success">Donate Now</button>
+      </div>
+      <ul class="note">
+        <li>
+          Designed and developed with <i class="fa-solid fa-heart"></i> by UFK
+          Solutions
+        </li>
+      </ul>
+    </footer>
+    <!-- Footer Ends -->
+  </body>
+</html>
