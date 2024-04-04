@@ -1,0 +1,25 @@
+.about-us-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 25px;
+}
+.about-us-container img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+.about-us-container h2{
+    text-transform: capitalize;
+}
+.about-us-container h2 span{
+    color: var(--var-theme-blue);
+}
+.about-us-container p{
+    text-align: justify;
+    color: var(--var-light-text);
+    font-style: italic;
+}

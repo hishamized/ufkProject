@@ -1,0 +1,120 @@
+.background-image-container{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/featured/?banking,finance');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 20px;
+    justify-content: center;
+    padding: 30px 20px;
+    color: #FFFFFF;
+}
+
+.banking-cards{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+    margin: 50px 25px;
+}
+
+.banking-cards .banking-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
+    padding: 20px 10px ;
+    margin: 0px 20px;
+    border: 1px solid var(--var-gray-border);
+    box-shadow: 0 0 10px var(--var-gray-border);
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+.banking-cards .banking-card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.banking-cards .banking-card .card-image {
+    background-color: var(--var-gray-bg);
+    padding: 10px 20px;
+    border-radius: 5%;
+}
+.banking-cards .banking-card .card-image img{
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
+
+}
+
+.qr-codes-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 50px;
+    padding: 100px 50px;
+    background-color: var(--var-gray-bg);
+}
+.qr-codes-container div h1{
+    font-size: x-large;
+}
+.qr-codes-container .qr-codes{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    gap: 30px;
+}
+.qr-codes-container .qr-codes .qr-code{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
+    background-color: #FFFFFF;
+    padding: 20px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px var(--var-gray-border);
+    transition: all 0.3s;
+}
+.qr-codes-container .qr-codes .qr-code:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+.qr-codes-container .qr-codes .qr-code .bank-logo{
+    width: 100px;
+    height: 50px;
+    object-fit: cover;
+}
+.qr-codes-container .qr-codes .qr-code .qr-code-img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+@media only screen and (min-width: 768px){
+    .background-image-container{
+        min-height: 40vh;
+    }
+    .background-image-container h1{
+        font-size: xx-large;
+    }
+    .banking-cards{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        padding: 50px 50px;
+        place-items: center;
+        margin: 20px 150px;
+    }
+    .banking-cards .banking-card{
+        max-width: 400px;
+        padding: 50px;
+    }
+    .qr-codes-container .qr-codes{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

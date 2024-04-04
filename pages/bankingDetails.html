@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome  -->
+    <script
+      src="https://kit.fontawesome.com/1bc2765d38.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/global.css" />
+    <script type="text/javascript" src="../js/global.js"></script>
+    <link rel="stylesheet" href="../css/bankingDetails.css" />
+    <script type="text/javascript" src="../js/bankingDetails.js"></script>
+    <title>About Us</title>
+  </head>
+  <body>
+    <!-- Navbar Starts -->
+    <nav class="navbar" id="navbar">
+      <ul class="nav-logo-container">
+        <li class="nav-logo">
+          <img src="../assets/images/navLogo.png" alt="Website Logo" />
+        </li>
+      </ul>
+      <ul class="navbar-dropdown">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../pages/aboutUs.html">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="../pages/bankingDetails.html">Banking Details</a></li>
+        <li>
+          <div class="dropdown">
+            <button onclick="toggleSubDropdown()" class="dropdown-toggle">
+              <i id="dropdownIcon" class="fa-solid fa-plus"></i> &nbsp Services
+            </button>
+            <ul style="display: none" id="dropdownMenu" class="dropdown-menu">
+              <li><a href="#">Service 1</a></li>
+              <li><a href="#">Service 2</a></li>
+              <li><a href="#">Service 3</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <ul class="navbar-subdivision">
+        <li><button>Donate</button></li>
+        <li id="icon-bars">
+          <i
+            onclick="toggleDropdown('navbar-dropdown')"
+            class="fa-solid fa-bars"
+          ></i>
+        </li>
+      </ul>
+    </nav>
+    <!-- Navbar ends -->
+
+    <!-- Banking Details Section starts -->
+    <section class="banking-details-container">
+      <div class="background-image-container">
+        <h1>Hyemath Kashmir Banking Details</h1>
+        <p>
+          We are grateful for your support. Your donation will help us to
+          provide food, shelter, and education to the needy people. Please find
+          below our banking details.
+        </p>
+      </div>
+
+      <!-- Banking Cards Section Starts -->
+      <div class="banking-cards">
+        <div class="banking-card">
+          <div class="card-image">
+            <img src="../assets/bankImages/jkbank.png" alt="bank-card-image">
+          </div>
+          <h1>Jammu Kashmir Bank</h1>
+          <p><strong>Branch:</strong> J&K Bank Rajbagh</p>
+          <p><strong>A/C Name:</strong> Hyemath Kashmir</p>
+          <p><strong>A/C Number:</strong> 0987654321234567</p>
+          <p><strong>IFSC Code:</strong> JAKACA0998</p>
+        </div>
+        <div class="banking-card">
+          <div class="card-image">
+            <img src="../assets/bankImages/hdfc.png" alt="bank-card-image">
+          </div>
+          <h1>HDFC Bank</h1>
+          <p><strong>Branch:</strong> HDFC Bank Rajbagh</p>
+          <p><strong>A/C Name:</strong> Hyemath Kashmir</p>
+          <p><strong>A/C Number:</strong> 0987654321234567</p>
+          <p><strong>IFSC Code:</strong> HDFCCA0998</p>
+        </div>
+        <div class="banking-card">
+          <div class="card-image">
+            <img src="../assets/bankImages/axis.png" alt="bank-card-image">
+          </div>
+          <h1>Axis Bank</h1>
+          <p><strong>Branch:</strong> Axis Bank Rajbagh</p>
+          <p><strong>A/C Name:</strong> Hyemath Kashmir</p>
+          <p><strong>A/C Number:</strong> 0987654321234567</p>
+          <p><strong>IFSC Code:</strong> AXISCA0998</p>
+        </div>
+        <div class="banking-card">
+          <div class="card-image">
+            <img src="../assets/bankImages/icici.png" alt="bank-card-image">
+          </div>
+          <h1>ICICI Bank</h3>
+          <p><strong>Branch:</strong> ICICI Rajbagh</p>
+          <p><strong>A/C Name:</strong> Hyemath Kashmir</p>
+          <p><strong>A/C Number:</strong> 0987654321234567</p>
+          <p><strong>IFSC Code:</strong> ICICIA0998</p>
+        </div>
+      </div>
+      <!-- Banking Cards Section Ends -->
+
+      <!-- QR Code Section Starts -->
+      <section class="qr-codes-container">
+        <div>
+          <h1>Scan QR Codes to donate</h1>
+        </div>
+        <div class="qr-codes">
+         <div class="qr-code">
+          <img class="bank-logo" src="../assets/bankImages/jkbank.png" alt="jkbank-qr-code">
+          <img class="qr-code-img" src="../assets/bankImages/qrCode.png" alt="qr-code">
+          <h3>Jammu Kashmir Bank</h3>
+         </div>
+         <div class="qr-code">
+          <img class="bank-logo" src="../assets/bankImages/hdfc.png" alt="Hdfc-bank-qr-code">
+          <img class="qr-code-img" src="../assets/bankImages/qrCode.png" alt="qr-code">
+          <h3>HDFC Bank</h3>
+         </div>
+        </div>
+      </section>
+      <!-- QR Code Section Ends -->
+    </section>
+    <!-- Banking Details Section ends -->
+
+    <!-- Footer Starts -->
+    <footer class="footer">
+      <div class="company-name">
+        <img src="../assets/images/logo3.png" alt="Website Logo" />
+        <h4>Company Title</h4>
+      </div>
+      <ul class="contact-details">
+        <li>
+          <i class="fa-solid fa-location-dot"></i>&nbspAddress, Srinagar - Jammu
+          and Kashmir - 190001
+        </li>
+        <li><i class="fa-solid fa-phone"></i>&nbsp+91 1234567890</li>
+        <li><i class="fa-solid fa-phone"></i>&nbsp+91 3234567290</li>
+        <li>
+          <i class="fa-solid fa-envelope"></i>&nbspcompanyEmail@example.com
+        </li>
+      </ul>
+      <div class="social-media-container">
+        <h3>Follow Us On</h3>
+        <ul class="social-media">
+          <li><i class="fa-brands fa-facebook"></i>&nbspFacebook</li>
+          <li><i class="fa-brands fa-instagram"></i>&nbspInstagram</li>
+          <li><i class="fa-brands fa-twitter"></i>&nbspTwitter</li>
+          <li><i class="fa-brands fa-youtube"></i>&nbspYoutube</li>
+        </ul>
+      </div>
+      <ul class="navigation">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="aboutUs.html">About Us</a></li>
+        <li><a href="bankingDetails.html">Contact Us</a></li>
+        <li><a href="#">Banking Details</a></li>
+      </ul>
+      <div class="ending">
+        <h3>All Donations are Tax-Deductable</h3>
+        <p>© 2021 Company Title. All Rights Reserved</p>
+        <button class="button-success">Donate Now</button>
+      </div>
+      <ul class="note">
+        <li>
+          Designed and developed with <i class="fa-solid fa-heart"></i> by UFK
+          Solutions
+        </li>
+      </ul>
+    </footer>
+    <!-- Footer Ends -->
+  </body>
+</html>
