@@ -1,0 +1,51 @@
+.background-image-container{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/featured/?contact, communication');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 20px;
+    justify-content: center;
+    padding: 30px 20px;
+    color: #FFFFFF;
+}
+.contact-details-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    row-gap: 20px;
+    background-color: var(--var-gray-bg);
+}
+.contact-details-container .contact-detail{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 10px;
+    margin: 10px 0;
+    background-color: #FFFFFF;
+    padding: 20px 20px;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+.contact-details-container .contact-detail:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px var(--var-theme-blue);
+}
+.contact-details-container .contact-detail .contact-detail-text{
+    font-style: oblique;
+}
+.contact-details-container .contact-detail .contact-detail-icon i{
+    font-size: x-large;
+}
+
+@media only screen and (min-width: 768px){
+    .background-image-container{
+        min-height: 40vh;
+    }
+}

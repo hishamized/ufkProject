@@ -79,7 +79,6 @@ function toggleText(cardIndex, buttonId) {
 // Cards section js ends
 
 // Statistics section js starts
-// JavaScript
 document.addEventListener('DOMContentLoaded', function() {
   const statistics = document.querySelectorAll('.statistic');
 
@@ -124,25 +123,21 @@ document.addEventListener('DOMContentLoaded', function() {
 // Statistics section js ends
 
 // Testimonials section js starts
-  // JavaScript function to initialize testimonials
   function initializeTestimonials() {
-    // Get all testimonials
     var testimonials = document.querySelectorAll('.testimonial');
-    
-    // Hide all testimonials except the first one
+  
     for (var i = 1; i < testimonials.length; i++) {
       testimonials[i].style.display = 'none';
     }
   }
   
-  // Call the initializeTestimonials function on page load
+
   window.addEventListener('load', initializeTestimonials);
-  // JavaScript function to navigate testimonials
+
   function navigateTestimonials(direction) {
-    // Get all testimonials
+
     var testimonials = document.querySelectorAll('.testimonial');
-    
-    // Find the currently visible testimonial
+
     var visibleTestimonialIndex;
     for (var i = 0; i < testimonials.length; i++) {
       if (testimonials[i].style.display !== 'none') {
@@ -156,7 +151,7 @@ document.addEventListener('DOMContentLoaded', function() {
       testimonial.style.display = 'none';
     });
     
-    // Calculate the index of the next/previous testimonial
+
     var nextTestimonialIndex;
     if (direction === 'next') {
       nextTestimonialIndex = (visibleTestimonialIndex + 1) % testimonials.length;
@@ -164,7 +159,7 @@ document.addEventListener('DOMContentLoaded', function() {
       nextTestimonialIndex = (visibleTestimonialIndex - 1 + testimonials.length) % testimonials.length;
     }
     
-    // Display the next/previous testimonial
+
     testimonials[nextTestimonialIndex].style.display = 'flex';
   }
 // Testimonials section js ends

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome  -->
+    <script
+      src="https://kit.fontawesome.com/1bc2765d38.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/global.css" />
+    <script type="text/javascript" src="../js/global.js"></script>
+    <link rel="stylesheet" href="../css/contactUs.css" />
+    <script type="text/javascript" src="../js/contactUs.js"></script>
+    <title>About Us</title>
+  </head>
+  <body>
+    <!-- Navbar Starts -->
+    <nav class="navbar" id="navbar">
+      <ul class="nav-logo-container">
+        <li class="nav-logo">
+          <img src="../assets/images/navLogo.png" alt="Website Logo" />
+        </li>
+      </ul>
+      <ul class="navbar-dropdown">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="aboutUs.html">About Us</a></li>
+        <li><a href="contactUs.html">Contact Us</a></li>
+        <li><a href="bankingDetails.html">Banking Details</a></li>
+        <li>
+          <div class="dropdown">
+            <button onclick="toggleSubDropdown()" class="dropdown-toggle">
+              <i id="dropdownIcon" class="fa-solid fa-plus"></i> &nbsp Services
+            </button>
+            <ul style="display: none" id="dropdownMenu" class="dropdown-menu">
+              <li><a href="#">Service 1</a></li>
+              <li><a href="#">Service 2</a></li>
+              <li><a href="#">Service 3</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <ul class="navbar-subdivision">
+        <li><button>Donate</button></li>
+        <li id="icon-bars">
+          <i
+            onclick="toggleDropdown('navbar-dropdown')"
+            class="fa-solid fa-bars"
+          ></i>
+        </li>
+      </ul>
+    </nav>
+    <!-- Navbar ends -->
+
+    <!-- Backgroud Image Container Starts -->
+    <div class="background-image-container">
+        <h1>Hyemath Kashmir Contact Details</h1>
+        <p>
+            We are always here to help you. If you have any queries or need any
+            help, feel free to contact us. We are always here to help you.
+        </p>
+      </div>
+    <!-- Backgroud Image Container Ends -->
+
+    <!-- Contact Tiles section starts -->
+    <section class="contact-details-container">
+        <div class="contact-detail">
+            <div class="contact-detail-icon">
+                <i class="fa-solid fa-tty"></i>
+            </div>
+            <div class="contact-detail-text">
+                0194-245-1234,
+                0194-245-1234
+            </div>
+        </div>
+
+        <div class="contact-detail">
+            <div class="contact-detail-icon">
+                <i class="fa-solid fa-phone-volume"></i>
+            </div>
+            <div class="contact-detail-text">
+                0194-245-1234,
+                0194-245-1234
+            </div>
+        </div>
+
+        <div class="contact-detail">
+            <div class="contact-detail-icon">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="contact-detail-text">
+                hyemathkashmir@gmail.com
+            </div>
+        </div>
+
+        <div class="contact-detail">
+            <div class="contact-detail-icon">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="contact-detail-text">
+               Address, Srinagar - Jammu and Kashmir - 190001
+            </div>
+        </div>
+    </section>
+    <!-- Contact Tiles section ends -->
+
+<!-- Social Media Section Starts -->
+<section class="social-media-details">
+  <h1>Follow Us On Social Media</h1>
+  <div class="social-media-flex">
+    <a class="social-media-detail" target="_blank" href="https://www.facebook.com/hyemathkashmir">
+      <div class="flex-row">
+        <i class="fa-brands fa-facebook"></i>
+        <h3>Facebook</h3>
+      </div>
+    </a>
+    <a class="social-media-detail" target="_blank" href="http://www.instagram.com/hyemathkashmir">
+      <div class="flex-row">
+        <i class="fa-brands fa-instagram"></i>
+        <h3>Instagram</h3>
+      </div>
+    </a>
+    <a class="social-media-detail" target="_blank" href="http://www.twitter.com/hyemathkashmir">
+      <div class="flex-row">
+        <i class="fa-brands fa-square-x-twitter"></i>
+        <h3>Twitter/X</h3>
+      </div>
+    </a>
+    <a  class="social-media-detail" target="_blank" href="https://www.linkedin.com/company/hyemath-kashmir/">
+      <div class="flex-row">
+        <i class="fa-brands fa-linkedin"></i>
+        <h3>LinkedIn</h3>
+      </div>
+    </a>
+  </div>
+</section>
+<!-- Social Media Section ends -->
+
+
+    <!-- Embedded Google Maps Location Starts -->
+    <section class="google-maps-container">
+        <h1> <span><i class="fa-solid fa-location-dot"></i></span> Find Us On Google Maps</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6609.952209052839!2d74.80040070201247!3d34.07012680523536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e18f96b387110d%3A0x3f279be250eb08ff!2sLal%20Chowk%2C%20Srinagar%20190001!5e0!3m2!1sen!2sin!4v1712332304712!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+      <!-- Embedded Google Maps Location Ends -->
+
+   
+
+    <!-- Footer Starts -->
+    <footer class="footer">
+      <div class="company-name">
+        <img src="../assets/images/logo3.png" alt="Website Logo" />
+        <h4>Company Title</h4>
+      </div>
+      <ul class="contact-details">
+        <li>
+          <i class="fa-solid fa-location-dot"></i>&nbspAddress, Srinagar - Jammu
+          and Kashmir - 190001
+        </li>
+        <li><i class="fa-solid fa-phone"></i>&nbsp+91 1234567890</li>
+        <li><i class="fa-solid fa-phone"></i>&nbsp+91 3234567290</li>
+        <li>
+          <i class="fa-solid fa-envelope"></i>&nbspcompanyEmail@example.com
+        </li>
+      </ul>
+      <div class="social-media-container">
+        <h3>Follow Us On</h3>
+        <ul class="social-media">
+          <li><i class="fa-brands fa-facebook"></i>&nbspFacebook</li>
+          <li><i class="fa-brands fa-instagram"></i>&nbspInstagram</li>
+          <li><i class="fa-brands fa-twitter"></i>&nbspTwitter</li>
+          <li><i class="fa-brands fa-youtube"></i>&nbspYoutube</li>
+        </ul>
+      </div>
+      <ul class="navigation">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="aboutUs.html">About Us</a></li>
+        <li><a href="contactUs.html">Contact Us</a></li>
+        <li><a href="bankingDetails.html">Banking Details</a></li>
+      </ul>
+      <div class="ending">
+        <h3>All Donations are Tax-Deductable</h3>
+        <p>© 2021 Company Title. All Rights Reserved</p>
+        <button class="button-success">Donate Now</button>
+      </div>
+      <ul class="note">
+        <li>
+          Designed and developed with <i class="fa-solid fa-heart"></i> by UFK
+          Solutions
+        </li>
+      </ul>
+    </footer>
+    <!-- Footer Ends -->
+  </body>
+</html>

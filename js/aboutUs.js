@@ -3,3 +3,4 @@ document.addEventListener("DOMContentLoaded", function () {
     var project = document.getElementsByClassName("about-us-container")[0];
       project.style.marginTop = navbarHeight + 50 + "px";
   });
+

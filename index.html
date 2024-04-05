@@ -24,7 +24,7 @@
       <ul class="navbar-dropdown">
         <li><a href="index.html">Home</a></li>
         <li><a href="./pages/aboutUs.html">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="./pages/contactUs.html">Contact Us</a></li>
         <li><a href="./pages/bankingDetails.html">Banking Details</a></li>
         <li>
           <div class="dropdown">
@@ -123,13 +123,14 @@
     <!-- Cards section starts -->
     <div class="cards-heading"><h1>Our Projects</h1></div>
     <div class="cards-conatainer">
-      <div class="card-container">
+      <div class="card-container" id="FoodForAll" data-project="FoodForAll">
         <img
+          id="FoodForAll-img"
           src="https://source.unsplash.com/featured/?food"
           alt="card-image"
         />
-        <h4>Food For All</h4>
-        <p class="content limited">
+        <h4 id="FoodForAll-title">Food For All</h4>
+        <p class="content limited" id="FoodForAll-description">
           In today's world, it is a sad reality that many people struggle to put
           food on their tables. Financial difficulties, especially in times of
           crises like the COVID-19 pandemic, can make it incredibly challenging
@@ -171,19 +172,24 @@
           >
             Read More
           </button>
-          <a href="./pages/viewProject.html" class="button-theme">View Project</a>
+          <a
+            href="./pages/viewProject.html?project=FoodForAll"
+            class="button-theme"
+            >View Project</a
+          >
         </div>
       </div>
-      <div class="card-container">
+      <div class="card-container" id="womenEmpowerment">
         <img
+          id="womenEmpowerment-img"
           src="https://source.unsplash.com/featured/?women"
           alt="card-image"
         />
-        <h4>
+        <h4 id="womenEmpowerment-title">
           Empowering Girls and Women: Breaking Taboos, Educating, and Providing
           Hygiene Kits
         </h4>
-        <p class="content limited">
+        <p class="content limited" id="womenEmpowerment-description">
           Menstrual hygiene is an essential aspect of women's health, yet it
           remains shrouded in silence, shame, and misinformation. In many parts
           of the world, including cities and villages, girls and women face
@@ -246,18 +252,23 @@
           >
             Read More
           </button>
-          <a href="./pages/viewProject.html" class="button-theme"
+          <a
+            href="./pages/viewProject.html?project=womenEmpowerment"
+            class="button-theme"
             >View Project</a
           >
         </div>
       </div>
-      <div class="card-container">
+      <div class="card-container" id="cleanWater">
         <img
+          id="cleanWater-img"
           src="https://source.unsplash.com/featured/?water"
           alt="card-image"
         />
-        <h4>Ensuring Access to Clean Water in Remote Areas of Kashmir</h4>
-        <p class="content limited">
+        <h4 id="cleanWater-title">
+          Ensuring Access to Clean Water in Remote Areas of Kashmir
+        </h4>
+        <p id="cleanWater-description" class="content limited">
           Access to clean and safe drinking water is a fundamental human right,
           yet it remains a challenge for many communities, particularly in
           far-flung areas of Kashmir. In collaboration with other NGOs, our
@@ -325,18 +336,21 @@
           >
             Read More
           </button>
-          <a href="./pages/viewProject.html" class="button-theme"
+          <a
+            href="./pages/viewProject.html?project=cleanWater"
+            class="button-theme"
             >View Project</a
           >
         </div>
       </div>
-      <div class="card-container">
+      <div class="card-container" id="project4">
         <img
+          id="project4-img"
           src="https://source.unsplash.com/featured/?hospital"
           alt="card-image"
         />
-        <h4>Card Template Heading</h4>
-        <p class="content limited">
+        <h4 id="project4-title">Card Template Heading for project 4</h4>
+        <p id="project4-description" class="content limited">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos
           praesentium ratione atque sapiente dolore, quia nulla excepturi
           tenetur blanditiis corporis quis ea non id vero impedit enim
@@ -364,18 +378,21 @@
           >
             Read More
           </button>
-          <a href="./pages/viewProject.html" class="button-theme"
+          <a
+            href="./pages/viewProject.html?project=project4"
+            class="button-theme"
             >View Project</a
           >
         </div>
       </div>
-      <div class="card-container">
+      <div class="card-container" id="project5">
         <img
+          id="project5-img"
           src="https://source.unsplash.com/featured/?charity"
           alt="card-image"
         />
-        <h4>Card Template Heading</h4>
-        <p class="content limited">
+        <h4 id="project5-title">Card Template Heading for project 5</h4>
+        <p id="project5-description" class="content limited">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos
           praesentium ratione atque sapiente dolore, quia nulla excepturi
           tenetur blanditiis corporis quis ea non id vero impedit enim
@@ -403,18 +420,21 @@
           >
             Read More
           </button>
-          <a href="./pages/viewProject.html" class="button-theme"
+          <a
+            href="./pages/viewProject.html?project=project5"
+            class="button-theme"
             >View Project</a
           >
         </div>
       </div>
-      <div class="card-container">
+      <div class="card-container" id="project6">
         <img
+          id="project6-img"
           src="https://source.unsplash.com/featured/?donation"
           alt="card-image"
         />
-        <h4>Card Template Heading</h4>
-        <p class="content limited">
+        <h4 id="project6-title">Card Template Heading for project 6</h4>
+        <p id="project6-description" class="content limited">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos
           praesentium ratione atque sapiente dolore, quia nulla excepturi
           tenetur blanditiis corporis quis ea non id vero impedit enim
@@ -442,18 +462,21 @@
           >
             Read More
           </button>
-          <a href="./pages/viewProject.html" class="button-theme"
+          <a
+            href="./pages/viewProject.html?project=project6"
+            class="button-theme"
             >View Project</a
           >
         </div>
       </div>
-      <div class="card-container">
+      <div class="card-container" id="project7">
         <img
+          id="project7-img"
           src="https://source.unsplash.com/featured/?kits"
           alt="card-image"
         />
-        <h4>Card Template Heading</h4>
-        <p class="content limited">
+        <h4 id="project7-title">Card Template Heading of project 7</h4>
+        <p class="content limited" id="project7-description">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos
           praesentium ratione atque sapiente dolore, quia nulla excepturi
           tenetur blanditiis corporis quis ea non id vero impedit enim
@@ -481,18 +504,21 @@
           >
             Read More
           </button>
-          <a href="./pages/viewProject.html" class="button-theme"
+          <a
+            href="./pages/viewProject.html?project=project7"
+            class="button-theme"
             >View Project</a
           >
         </div>
       </div>
-      <div class="card-container">
+      <div class="card-container" id="project8">
         <img
+          id="project8-img"
           src="https://source.unsplash.com/featured/?help"
           alt="card-image"
         />
-        <h4>Card Template Heading</h4>
-        <p class="content limited">
+        <h4 id="project8-title">Card Template Heading for project 8</h4>
+        <p id="project8-description" class="content limited">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos
           praesentium ratione atque sapiente dolore, quia nulla excepturi
           tenetur blanditiis corporis quis ea non id vero impedit enim
@@ -520,18 +546,21 @@
           >
             Read More
           </button>
-          <a href="./pages/viewProject.html" class="button-theme"
+          <a
+            href="./pages/viewProject.html?project=project8"
+            class="button-theme"
             >View Project</a
           >
         </div>
       </div>
-      <div class="card-container">
+      <div class="card-container" id="project9">
         <img
+          id="project9-img"
           src="https://source.unsplash.com/featured/?medical"
           alt="card-image"
         />
-        <h4>Card Template Heading</h4>
-        <p class="content limited">
+        <h4 id="project9-title">Card Template Heading for project 9</h4>
+        <p id="project9-description" class="content limited">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos
           praesentium ratione atque sapiente dolore, quia nulla excepturi
           tenetur blanditiis corporis quis ea non id vero impedit enim
@@ -559,7 +588,9 @@
           >
             Read More
           </button>
-          <a href="./pages/viewProject.html" class="button-theme"
+          <a
+            href="./pages/viewProject.html?project=project9"
+            class="button-theme"
             >View Project</a
           >
         </div>
@@ -695,6 +726,55 @@
       </div>
     </section>
     <!-- Testinmonials section ends -->
+<!-- Social Media Section Starts -->
+<section class="social-media-details">
+  <h1>Follow Us On Social Media</h1>
+  <div class="social-media-flex">
+    <a class="social-media-detail" target="_blank" href="https://www.facebook.com/hyemathkashmir">
+      <div class="flex-row">
+        <i class="fa-brands fa-facebook"></i>
+        <h3>Facebook</h3>
+      </div>
+    </a>
+    <a class="social-media-detail" target="_blank" href="http://www.instagram.com/hyemathkashmir">
+      <div class="flex-row">
+        <i class="fa-brands fa-instagram"></i>
+        <h3>Instagram</h3>
+      </div>
+    </a>
+    <a class="social-media-detail" target="_blank" href="http://www.twitter.com/hyemathkashmir">
+      <div class="flex-row">
+        <i class="fa-brands fa-square-x-twitter"></i>
+        <h3>Twitter/X</h3>
+      </div>
+    </a>
+    <a  class="social-media-detail" target="_blank" href="https://www.linkedin.com/company/hyemath-kashmir/">
+      <div class="flex-row">
+        <i class="fa-brands fa-linkedin"></i>
+        <h3>LinkedIn</h3>
+      </div>
+    </a>
+  </div>
+</section>
+<!-- Social Media Section ends -->
+
+    <!-- Embedded Google Maps Location Starts -->
+    <section class="google-maps-container">
+      <h1>
+        <span><i class="fa-solid fa-location-dot"></i></span> Find Us On Google
+        Maps
+      </h1>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6609.952209052839!2d74.80040070201247!3d34.07012680523536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e18f96b387110d%3A0x3f279be250eb08ff!2sLal%20Chowk%2C%20Srinagar%20190001!5e0!3m2!1sen!2sin!4v1712332304712!5m2!1sen!2sin"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+    <!-- Embedded Google Maps Location Ends -->
 
     <!-- Footer Starts -->
     <footer class="footer">
@@ -716,16 +796,43 @@
       <div class="social-media-container">
         <h3>Follow Us On</h3>
         <ul class="social-media">
-          <li><i class="fa-brands fa-facebook"></i>&nbspFacebook</li>
-          <li><i class="fa-brands fa-instagram"></i>&nbspInstagram</li>
-          <li><i class="fa-brands fa-twitter"></i>&nbspTwitter</li>
-          <li><i class="fa-brands fa-youtube"></i>&nbspYoutube</li>
+          <li>
+            <i class="fa-brands fa-facebook"></i>&nbsp<a
+              target="_blank"
+              href="https://www.facebook.com/hyemathkashmir 
+            "
+              >Facebook</a
+            >
+          </li>
+          <li>
+            <i class="fa-brands fa-instagram"></i>&nbsp<a
+              target="_blank"
+              href="https://www.instagram.com/hyemathkashmir
+            "
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <i class="fa-brands fa-square-x-twitter"></i>&nbsp<a
+              target="_blank"
+              href="https://www.twitter.com/hyemathkashmir
+            "
+              >Twitter/X</a
+            >
+          </li>
+          <li>
+            <i class="fa-brands fa-linkedin"></i>&nbsp<a
+              target="_blank"
+              href="https://www.linkedin.com/company/hyemath-kashmir/"
+              >LinnkedIn</a
+            >
+          </li>
         </ul>
       </div>
       <ul class="navigation">
         <li><a href="./index.html">Home</a></li>
         <li><a href="./pages/aboutUs.html">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="./pages/contactUs.html">Contact Us</a></li>
         <li><a href="./pages/bankingDetails.html">Banking Details</a></li>
       </ul>
       <div class="ending">

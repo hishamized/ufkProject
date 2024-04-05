@@ -6,6 +6,7 @@ a{
     --var-primary: #f1f1f1;
     --var-text: #ffffff;
     --var-theme-blue: #2099a9;
+    --var-google-maps-blue: #9cb9e5;
     --var-light-text: rgba(68, 68, 68, 1);
     --var-gray-bg: #f2f3f7;
     --var-gray-border: rgba(128, 128, 128, 0.603);
@@ -187,6 +188,75 @@ ul li a{
     }
 /* Header CSS Ends */
 
+/* Social Media Details CSS Starts */
+.social-media-details .social-media-flex a{
+ text-decoration: none;
+    color: #000000;
+}
+.social-media-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px;
+    row-gap: 20px;
+    background-color: #ffffff;
+}
+.social-media-details h2{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.social-media-details .social-media-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 25px;
+}
+.social-media-details .social-media-detail{
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0%;
+    padding: 25px 25px;
+    box-shadow: 0 4px 14px 0 rgba(80, 80, 80, 0.5);
+    border-radius: 5px;
+    transition: all .5s;
+}
+.social-media-details .social-media-detail:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 14px 0 var(--var-theme-blue);
+    transform: scale(1.1);
+}
+.social-media-details .social-media-detail i{
+    font-size: x-large;
+}
+
+/* Social Media Details CSS Ends */
+
+/* Google Maps Css Starts */
+.google-maps-container{
+ max-width: 100%;
+ overflow: scroll;
+ padding: 10px 10px;
+}
+.google-maps-container h1{
+    text-align: center;
+    text-transform: capitalize;
+    margin: 50px 10px;
+}
+.google-maps-container iframe{
+    width: 100%;
+    height: 500px;
+    border: none;
+    box-shadow: 0 4px 14px 0 var(--var-google-maps-blue);
+}
+/* Google Maps Css Ends */
+
 /* Footer Css starts */
 .footer{
     display: flex;
@@ -236,6 +306,10 @@ ul li a{
     align-items: flex-start;
     width: 100%;
     padding: 0%;
+}
+.footer .social-media-container .social-media a{
+    text-decoration: none;
+    color: #FFFFFF;
 }
 .footer .navigation a{
     color: var(--var-text);
@@ -587,5 +661,13 @@ padding: 30px;
 }
 .statistics-container .statistic h3{
     font-weight: 700;
+}
+
+.social-media-details .social-media-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 25px;
 }
 }

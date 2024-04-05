@@ -13,7 +13,6 @@
       <link rel="stylesheet" href="../css/global.css" />
       <script type="text/javascript" src="../js/global.js"></script>
         <link rel="stylesheet" href="../css/viewProject.css" />
-        <script type="text/javascript" src="../js/viewProject.js"></script>
       <title>View Project</title>
     </head>
   </head>
@@ -27,9 +26,9 @@
       </ul>
       <ul class="navbar-dropdown">
         <li><a href="../index.html">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#">Banking Details</a></li>
+        <li><a href="aboutUs.html">About Us</a></li>
+        <li><a href="contactUs.html">Contact Us</a></li>
+        <li><a href="bankingDetails.html">Banking Details</a></li>
         <li>
           <div class="dropdown">
             <button onclick="toggleSubDropdown()" class="dropdown-toggle">
@@ -58,11 +57,11 @@
     <!-- Project Section Starts -->
     <div class="project-container">
         <div class="project-image">
-          <img src="https://source.unsplash.com/featured/?project" alt="Project Image" />
+          <img id="project-img" src="https://source.unsplash.com/featured/?project" alt="Project Image" />
         </div>
         <div class="project-details">
-          <h1>Project Title</h1>
-          <p>
+          <h1 id="project-title">Project Title</h1>
+          <p id="project-description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
             tincidunt, nunc nec ultricies fermentum, nunc nisl lacinia turpis,
             vel luctus diam nunc a nunc. Nullam nec nunc nec nunc ultricies
@@ -120,10 +119,10 @@
         </ul>
       </div>
       <ul class="navigation">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#">Banking Details</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="aboutUs.html">About Us</a></li>
+        <li><a href="contactUs.html">Contact Us</a></li>
+        <li><a href="bankingDetails.html">Banking Details</a></li>
       </ul>
       <div class="ending">
         <h3>All Donations are Tax-Deductable</h3>
@@ -138,5 +137,6 @@
       </ul>
     </footer>
     <!-- Footer Ends -->
+    <script type="text/javascript" src="../js/viewProject.js"></script>
   </body>
 </html>
