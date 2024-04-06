@@ -26,8 +26,7 @@
     row-gap: 15px;
     padding: 20px 10px ;
     margin: 0px 20px;
-    border: 1px solid var(--var-gray-border);
-    box-shadow: 0 0 10px var(--var-gray-border);
+    box-shadow: 0 5px 18px 3px rgba(0,0,0,.11);
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
 }
@@ -75,7 +74,7 @@
     background-color: #FFFFFF;
     padding: 20px 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px var(--var-gray-border);
+    box-shadow: 0 5px 18px 3px rgba(0,0,0,.11);
     transition: all 0.3s;
 }
 .qr-codes-container .qr-codes .qr-code:hover{

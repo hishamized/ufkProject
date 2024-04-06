@@ -1,134 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Font Awesome  -->
-    <script
-      src="https://kit.fontawesome.com/1bc2765d38.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="./css/global.css" />
-    <script type="text/javascript" src="./js/global.js"></script>
-    <title>Home</title>
-  </head>
-  <body>
-    <!-- Navbar Starts -->
-    <nav class="navbar" id="navbar">
-      <ul class="nav-logo-container">
-        <li class="nav-logo">
-          <img src="./assets/images/navLogo.png" alt="Website Logo" />
-        </li>
-      </ul>
-      <ul class="navbar-dropdown">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="./pages/aboutUs.html">About Us</a></li>
-        <li><a href="./pages/contactUs.html">Contact Us</a></li>
-        <li><a href="./pages/bankingDetails.html">Banking Details</a></li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Font Awesome  -->
+  <script src="https://kit.fontawesome.com/1bc2765d38.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/global.css" />
+  <script type="text/javascript" src="./js/global.js"></script>
+  <title>Home</title>
+</head>
+
+<body>
+  <!-- Navbar Starts -->
+  <nav class="navbar" id="navbar">
+    <ul class="nav-logo-container">
+      <li class="nav-logo">
+        <img src="./assets/images/navLogo.png" alt="Website Logo" />
+      </li>
+    </ul>
+    <ul class="navbar-dropdown">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="./pages/aboutUs.html">About Us</a></li>
+      <li><a href="./pages/contactUs.html">Contact Us</a></li>
+      <li><a href="./pages/gallery.html">Gallery</a></li>
+      <!-- 
         <li>
           <div class="dropdown">
             <button onclick="toggleSubDropdown()" class="dropdown-toggle">
-              <i id="dropdownIcon" class="fa-solid fa-plus"></i> &nbsp Services
-            </button>
+              <i id="dropdownIcon" class="fa-solid fa-plus"></i> &nbsp More...
+            </button>  
             <ul style="display: none" id="dropdownMenu" class="dropdown-menu">
-              <li><a href="#">Service 1</a></li>
-              <li><a href="#">Service 2</a></li>
-              <li><a href="#">Service 3</a></li>
-            </ul>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>     
           </div>
         </li>
-      </ul>
-      <ul class="navbar-subdivision">
-        <li><button>Donate</button></li>
-        <li id="icon-bars">
-          <i
-            onclick="toggleDropdown('navbar-dropdown')"
-            class="fa-solid fa-bars"
-          ></i>
-        </li>
-      </ul>
-    </nav>
-    <!-- Navbar ends -->
+         -->
+    </ul>
+    <ul>
+      <li><a class="donate-btn" href="./pages/bankingDetails.html">Donate</a></li>
+    </ul>
+    <ul class="nav-social-media">
+      <li>
+        <a href="http://www.instagram.com/hyemathkashmir" target="_blank" class="instagram-url"> <i
+            class="fa-brands fa-square-instagram"></i> </a>
+      </li>
+      <li>
+        <a href="http://www.facebook.com/hyemathkashmir" target="_blank" class="facebook-url"><i
+            class="fa-brands fa-square-facebook"></i></a>
+      </li>
+      <li>
+        <a href="http://www.twitter.com/hyemathkashmir" target="_blank" class="twitter-url"> <i
+            class="fa-brands fa-square-x-twitter"></i></a>
+      </li>
+    </ul>
+    <ul class="navbar-subdivision">
+      <li id="icon-bars">
+        <i onclick="toggleDropdown('navbar-dropdown')" class="fa-solid fa-bars"></i>
+      </li>
+    </ul>
+  </nav>
+  <!-- Navbar ends -->
 
-    <!-- header starts -->
-    <header class="header">
-      <p id="data">50,000 + Souls Impacted</p>
-      <h1>Extend a hand to those in need, let's uplift together.</h1>
+  <!-- header starts -->
+  <header class="header">
+    <p id="data">50,000 + Souls Impacted</p>
+    <h1>Extend a hand to those in need, let's uplift together.</h1>
+    <p>
+      We are a non-profit organization that aims to uplift the community by
+      providing basic necessities to those in need. We believe that everyone
+      deserves a chance to live a better life and we are here to help them
+      achieve that.
+    </p>
+    <div class="flex-row">
+      <button class="button-light">Learn More</button>
+      <button class="button-theme">Donate Now</button>
+    </div>
+  </header>
+  <!-- header ends -->
+
+  <!-- Introduction section starts -->
+  <div class="introduction-container">
+    <div class="youtube-iframe">
+      <iframe height="315" src="https://www.youtube.com/embed/a3ICNMQW7Ok?si=rjtkbDKZMWZWXKv-"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="introduction-text">
+      <h3>We Are Embracing Humanity's Progress: Discover Hyemath Kashmir</h3>
       <p>
-        We are a non-profit organization that aims to uplift the community by
-        providing basic necessities to those in need. We believe that everyone
-        deserves a chance to live a better life and we are here to help them
-        achieve that.
+        Step into the realm of Kashmir Hyemath, where our vision is anchored
+        in the profound conviction that each gesture of kindness and
+        benevolence holds the potential to reshape destinies. Enveloped within
+        the awe-inspiring embrace of the Kashmir Valley, our odyssey commenced
+        in 2010, fueled by a cohort of fervent and socially conscious
+        individuals committed to confronting the stark realities confronting
+        the marginalized within this paradisiacal expanse. Amidst the specter
+        of destitution casting its shadow upon the scenic vistas, Hyemath
+        emerged as a guiding light, steadfastly devoted to elevating
+        communities from desolation to empowerment.
       </p>
-      <div class="flex-row">
-        <button class="button-light">Learn More</button>
-        <button class="button-success">Donate Now</button>
-      </div>
-    </header>
-    <!-- header ends -->
-
-    <!-- Introduction section starts -->
-    <div class="introduction-container">
-      <div class="youtube-iframe">
-        <iframe
-          height="315"
-          src="https://www.youtube.com/embed/a3ICNMQW7Ok?si=rjtkbDKZMWZWXKv-"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-      </div>
-      <div class="introduction-text">
-        <h3>We Are Embracing Humanity's Progress: Discover COMPANY Kashmir</h3>
-        <p>
-          Step into the realm of Kashmir COMPANY, where our vision is anchored
-          in the profound conviction that each gesture of kindness and
-          benevolence holds the potential to reshape destinies. Enveloped within
-          the awe-inspiring embrace of the Kashmir Valley, our odyssey commenced
-          in 2010, fueled by a cohort of fervent and socially conscious
-          individuals committed to confronting the stark realities confronting
-          the marginalized within this paradisiacal expanse. Amidst the specter
-          of destitution casting its shadow upon the scenic vistas, COMPANY
-          emerged as a guiding light, steadfastly devoted to elevating
-          communities from desolation to empowerment.
-        </p>
-        <div class="flex-row button-set">
-          <button class="button-light" style="border: 1px solid #28a745">
-            About Us
-          </button>
-          <button class="button-success">DONATE NOW</button>
-        </div>
+      <div class="flex-row button-set">
+        <button class="button-light" style="border: 1px solid #2099a9">
+          About Us
+        </button>
+        <button class="button-theme">DONATE NOW</button>
       </div>
     </div>
-    <!-- Introduction section ends -->
+  </div>
+  <!-- Introduction section ends -->
 
-    <!-- Our Purpose Section starts -->
-    <div class="purpose-container">
-      <h2>Our Purpose</h2>
-      <p>
-        At COMPANY, we are driven by the belief that every individual deserves
-        the opportunity to lead a life of dignity and fulfillment. Our
-        initiatives are designed to empower communities, foster sustainable
-        development, and create a world where every person has the chance to
-        thrive. We are committed to making a difference in the lives of those
-        who need it most, and we invite you to join us in our mission to uplift
-        humanity.
-      </p>
-    </div>
-    <!-- Our Purpose Section ends -->
+  <!-- Our Purpose Section starts -->
+  <div class="purpose-container">
+    <h2>Our Purpose</h2>
+    <p>
+      At Hyemath, we are driven by the belief that every individual deserves
+      the opportunity to lead a life of dignity and fulfillment. Our
+      initiatives are designed to empower communities, foster sustainable
+      development, and create a world where every person has the chance to
+      thrive. We are committed to making a difference in the lives of those
+      who need it most, and we invite you to join us in our mission to uplift
+      humanity.
+    </p>
+  </div>
+  <!-- Our Purpose Section ends -->
 
-    <!-- Cards section starts -->
-    <div class="cards-heading"><h1>Our Projects</h1></div>
-    <div class="cards-conatainer">
-      <div class="card-container" id="FoodForAll" data-project="FoodForAll">
-        <img
-          id="FoodForAll-img"
-          src="https://source.unsplash.com/featured/?food"
-          alt="card-image"
-        />
+  <!-- Cards section starts -->
+  <div class="cards-heading">
+    <h1>Our Projects</h1>
+  </div>
+  <div class="cards-conatainer">
+    <div onclick="cardContainerClicked(this)" data-url="./pages/viewProject.html?project=FoodForAll"
+      class="card-container" id="FoodForAll">
+      <img id="FoodForAll-img" src="https://source.unsplash.com/featured/?food" alt="card-image" />
+      <div class="card-content">
         <h4 id="FoodForAll-title">Food For All</h4>
         <p class="content limited" id="FoodForAll-description">
           In today's world, it is a sad reality that many people struggle to put
@@ -164,27 +172,22 @@
           We will continue to work towards our goal of ensuring that no one goes
           to bed hungry.
         </p>
-        <div class="flex-row">
-          <button
-            class="button-success btn-small"
-            id="readButton1"
-            onclick="toggleText(1, this.id)"
-          >
+        <div class="card-btn-flex">
+          <button id="readButton1" onclick="toggleText(1, this.id)">
+            <i class="fa-solid fa-book"></i>
             Read More
           </button>
-          <a
-            href="./pages/viewProject.html?project=FoodForAll"
-            class="button-theme"
-            >View Project</a
-          >
+          <a href="./pages/viewProject.html?project=FoodForAll">
+            View Project
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+          </a>
         </div>
       </div>
-      <div class="card-container" id="womenEmpowerment">
-        <img
-          id="womenEmpowerment-img"
-          src="https://source.unsplash.com/featured/?women"
-          alt="card-image"
-        />
+    </div>
+    <div class="card-container" id="womenEmpowerment" onclick="cardContainerClicked(this)"
+      data-url="./pages/viewProject.html?project=womenEmpowerment">
+      <img id="womenEmpowerment-img" src="https://source.unsplash.com/featured/?women" alt="card-image" />
+      <div class="card-content">
         <h4 id="womenEmpowerment-title">
           Empowering Girls and Women: Breaking Taboos, Educating, and Providing
           Hygiene Kits
@@ -244,27 +247,22 @@
           resilience of girls and women, enabling them to navigate their
           menstrual journeys with confidence and pride.
         </p>
-        <div class="flex-row">
-          <button
-            class="button-success btn-small"
-            id="readButton2"
-            onclick="toggleText(2, this.id)"
-          >
+        <div class="card-btn-flex">
+          <button id="readButton2" onclick="toggleText(2, this.id)">
+            <i class="fa-solid fa-book"></i>
             Read More
           </button>
-          <a
-            href="./pages/viewProject.html?project=womenEmpowerment"
-            class="button-theme"
-            >View Project</a
-          >
+          <a href="./pages/viewProject.html?project=womenEmpowerment">
+            View Project
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+          </a>
         </div>
       </div>
-      <div class="card-container" id="cleanWater">
-        <img
-          id="cleanWater-img"
-          src="https://source.unsplash.com/featured/?water"
-          alt="card-image"
-        />
+    </div>
+    <div class="card-container" id="cleanWater" onclick="cardContainerClicked(this)"
+      data-url="./pages/viewProject.html?project=cleanWater">
+      <img id="cleanWater-img" src="https://source.unsplash.com/featured/?water" alt="card-image" />
+      <div class="card-content">
         <h4 id="cleanWater-title">
           Ensuring Access to Clean Water in Remote Areas of Kashmir
         </h4>
@@ -328,525 +326,386 @@
           where every individual has the right to quench their thirst with
           dignity and convenience.
         </p>
-        <div class="flex-row">
-          <button
-            class="button-success btn-small"
-            id="readButton3"
-            onclick="toggleText(3, this.id)"
-          >
+        <div class="card-btn-flex">
+          <button id="readButton3" onclick="toggleText(3, this.id)">
+            <i class="fa-solid fa-book"></i>
             Read More
           </button>
-          <a
-            href="./pages/viewProject.html?project=cleanWater"
-            class="button-theme"
-            >View Project</a
-          >
-        </div>
-      </div>
-      <div class="card-container" id="project4">
-        <img
-          id="project4-img"
-          src="https://source.unsplash.com/featured/?hospital"
-          alt="card-image"
-        />
-        <h4 id="project4-title">Card Template Heading for project 4</h4>
-        <p id="project4-description" class="content limited">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos
-          praesentium ratione atque sapiente dolore, quia nulla excepturi
-          tenetur blanditiis corporis quis ea non id vero impedit enim
-          distinctio minus. Magnam ab explicabo vitae suscipit facilis
-          exercitationem dolorem, labore nobis quo adipisci deserunt aliquid.
-          Neque, dignissimos voluptas! Commodi ipsam adipisci repellendus. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Pariatur veniam
-          deleniti nemo neque vero dignissimos quae illo, distinctio animi quo,
-          similique recusandae ut, veritatis reprehenderit? Saepe, tenetur
-          quisquam. Ullam corrupti voluptatibus perferendis ab. Reiciendis
-          exercitationem accusamus fugit laudantium blanditiis asperiores eaque
-          mollitia id earum labore nobis, sequi, ut alias, culpa dicta eligendi
-          cum unde tempore error! Fuga, deserunt sunt quisquam, repudiandae ab
-          quasi tenetur, ratione deleniti perspiciatis est doloremque ut minus
-          incidunt alias tempora perferendis doloribus aut sapiente quibusdam
-          saepe corporis? Aspernatur explicabo tenetur ad accusantium possimus
-          delectus pariatur amet adipisci quos libero. Necessitatibus in ad,
-          quos doloribus sit inventore!
-        </p>
-        <div class="flex-row">
-          <button
-            class="button-success btn-small"
-            id="readButton4"
-            onclick="toggleText(4, this.id)"
-          >
-            Read More
-          </button>
-          <a
-            href="./pages/viewProject.html?project=project4"
-            class="button-theme"
-            >View Project</a
-          >
-        </div>
-      </div>
-      <div class="card-container" id="project5">
-        <img
-          id="project5-img"
-          src="https://source.unsplash.com/featured/?charity"
-          alt="card-image"
-        />
-        <h4 id="project5-title">Card Template Heading for project 5</h4>
-        <p id="project5-description" class="content limited">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos
-          praesentium ratione atque sapiente dolore, quia nulla excepturi
-          tenetur blanditiis corporis quis ea non id vero impedit enim
-          distinctio minus. Magnam ab explicabo vitae suscipit facilis
-          exercitationem dolorem, labore nobis quo adipisci deserunt aliquid.
-          Neque, dignissimos voluptas! Commodi ipsam adipisci repellendus. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Pariatur veniam
-          deleniti nemo neque vero dignissimos quae illo, distinctio animi quo,
-          similique recusandae ut, veritatis reprehenderit? Saepe, tenetur
-          quisquam. Ullam corrupti voluptatibus perferendis ab. Reiciendis
-          exercitationem accusamus fugit laudantium blanditiis asperiores eaque
-          mollitia id earum labore nobis, sequi, ut alias, culpa dicta eligendi
-          cum unde tempore error! Fuga, deserunt sunt quisquam, repudiandae ab
-          quasi tenetur, ratione deleniti perspiciatis est doloremque ut minus
-          incidunt alias tempora perferendis doloribus aut sapiente quibusdam
-          saepe corporis? Aspernatur explicabo tenetur ad accusantium possimus
-          delectus pariatur amet adipisci quos libero. Necessitatibus in ad,
-          quos doloribus sit inventore!
-        </p>
-        <div class="flex-row">
-          <button
-            class="button-success btn-small"
-            id="readButton5"
-            onclick="toggleText(5, this.id)"
-          >
-            Read More
-          </button>
-          <a
-            href="./pages/viewProject.html?project=project5"
-            class="button-theme"
-            >View Project</a
-          >
-        </div>
-      </div>
-      <div class="card-container" id="project6">
-        <img
-          id="project6-img"
-          src="https://source.unsplash.com/featured/?donation"
-          alt="card-image"
-        />
-        <h4 id="project6-title">Card Template Heading for project 6</h4>
-        <p id="project6-description" class="content limited">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos
-          praesentium ratione atque sapiente dolore, quia nulla excepturi
-          tenetur blanditiis corporis quis ea non id vero impedit enim
-          distinctio minus. Magnam ab explicabo vitae suscipit facilis
-          exercitationem dolorem, labore nobis quo adipisci deserunt aliquid.
-          Neque, dignissimos voluptas! Commodi ipsam adipisci repellendus. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Pariatur veniam
-          deleniti nemo neque vero dignissimos quae illo, distinctio animi quo,
-          similique recusandae ut, veritatis reprehenderit? Saepe, tenetur
-          quisquam. Ullam corrupti voluptatibus perferendis ab. Reiciendis
-          exercitationem accusamus fugit laudantium blanditiis asperiores eaque
-          mollitia id earum labore nobis, sequi, ut alias, culpa dicta eligendi
-          cum unde tempore error! Fuga, deserunt sunt quisquam, repudiandae ab
-          quasi tenetur, ratione deleniti perspiciatis est doloremque ut minus
-          incidunt alias tempora perferendis doloribus aut sapiente quibusdam
-          saepe corporis? Aspernatur explicabo tenetur ad accusantium possimus
-          delectus pariatur amet adipisci quos libero. Necessitatibus in ad,
-          quos doloribus sit inventore!
-        </p>
-        <div class="flex-row">
-          <button
-            class="button-success btn-small"
-            id="readButton6"
-            onclick="toggleText(6, this.id)"
-          >
-            Read More
-          </button>
-          <a
-            href="./pages/viewProject.html?project=project6"
-            class="button-theme"
-            >View Project</a
-          >
-        </div>
-      </div>
-      <div class="card-container" id="project7">
-        <img
-          id="project7-img"
-          src="https://source.unsplash.com/featured/?kits"
-          alt="card-image"
-        />
-        <h4 id="project7-title">Card Template Heading of project 7</h4>
-        <p class="content limited" id="project7-description">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos
-          praesentium ratione atque sapiente dolore, quia nulla excepturi
-          tenetur blanditiis corporis quis ea non id vero impedit enim
-          distinctio minus. Magnam ab explicabo vitae suscipit facilis
-          exercitationem dolorem, labore nobis quo adipisci deserunt aliquid.
-          Neque, dignissimos voluptas! Commodi ipsam adipisci repellendus. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Pariatur veniam
-          deleniti nemo neque vero dignissimos quae illo, distinctio animi quo,
-          similique recusandae ut, veritatis reprehenderit? Saepe, tenetur
-          quisquam. Ullam corrupti voluptatibus perferendis ab. Reiciendis
-          exercitationem accusamus fugit laudantium blanditiis asperiores eaque
-          mollitia id earum labore nobis, sequi, ut alias, culpa dicta eligendi
-          cum unde tempore error! Fuga, deserunt sunt quisquam, repudiandae ab
-          quasi tenetur, ratione deleniti perspiciatis est doloremque ut minus
-          incidunt alias tempora perferendis doloribus aut sapiente quibusdam
-          saepe corporis? Aspernatur explicabo tenetur ad accusantium possimus
-          delectus pariatur amet adipisci quos libero. Necessitatibus in ad,
-          quos doloribus sit inventore!
-        </p>
-        <div class="flex-row">
-          <button
-            class="button-success btn-small"
-            id="readButton7"
-            onclick="toggleText(7, this.id)"
-          >
-            Read More
-          </button>
-          <a
-            href="./pages/viewProject.html?project=project7"
-            class="button-theme"
-            >View Project</a
-          >
-        </div>
-      </div>
-      <div class="card-container" id="project8">
-        <img
-          id="project8-img"
-          src="https://source.unsplash.com/featured/?help"
-          alt="card-image"
-        />
-        <h4 id="project8-title">Card Template Heading for project 8</h4>
-        <p id="project8-description" class="content limited">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos
-          praesentium ratione atque sapiente dolore, quia nulla excepturi
-          tenetur blanditiis corporis quis ea non id vero impedit enim
-          distinctio minus. Magnam ab explicabo vitae suscipit facilis
-          exercitationem dolorem, labore nobis quo adipisci deserunt aliquid.
-          Neque, dignissimos voluptas! Commodi ipsam adipisci repellendus. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Pariatur veniam
-          deleniti nemo neque vero dignissimos quae illo, distinctio animi quo,
-          similique recusandae ut, veritatis reprehenderit? Saepe, tenetur
-          quisquam. Ullam corrupti voluptatibus perferendis ab. Reiciendis
-          exercitationem accusamus fugit laudantium blanditiis asperiores eaque
-          mollitia id earum labore nobis, sequi, ut alias, culpa dicta eligendi
-          cum unde tempore error! Fuga, deserunt sunt quisquam, repudiandae ab
-          quasi tenetur, ratione deleniti perspiciatis est doloremque ut minus
-          incidunt alias tempora perferendis doloribus aut sapiente quibusdam
-          saepe corporis? Aspernatur explicabo tenetur ad accusantium possimus
-          delectus pariatur amet adipisci quos libero. Necessitatibus in ad,
-          quos doloribus sit inventore!
-        </p>
-        <div class="flex-row">
-          <button
-            class="button-success btn-small"
-            id="readButton8"
-            onclick="toggleText(8, this.id)"
-          >
-            Read More
-          </button>
-          <a
-            href="./pages/viewProject.html?project=project8"
-            class="button-theme"
-            >View Project</a
-          >
-        </div>
-      </div>
-      <div class="card-container" id="project9">
-        <img
-          id="project9-img"
-          src="https://source.unsplash.com/featured/?medical"
-          alt="card-image"
-        />
-        <h4 id="project9-title">Card Template Heading for project 9</h4>
-        <p id="project9-description" class="content limited">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos
-          praesentium ratione atque sapiente dolore, quia nulla excepturi
-          tenetur blanditiis corporis quis ea non id vero impedit enim
-          distinctio minus. Magnam ab explicabo vitae suscipit facilis
-          exercitationem dolorem, labore nobis quo adipisci deserunt aliquid.
-          Neque, dignissimos voluptas! Commodi ipsam adipisci repellendus. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Pariatur veniam
-          deleniti nemo neque vero dignissimos quae illo, distinctio animi quo,
-          similique recusandae ut, veritatis reprehenderit? Saepe, tenetur
-          quisquam. Ullam corrupti voluptatibus perferendis ab. Reiciendis
-          exercitationem accusamus fugit laudantium blanditiis asperiores eaque
-          mollitia id earum labore nobis, sequi, ut alias, culpa dicta eligendi
-          cum unde tempore error! Fuga, deserunt sunt quisquam, repudiandae ab
-          quasi tenetur, ratione deleniti perspiciatis est doloremque ut minus
-          incidunt alias tempora perferendis doloribus aut sapiente quibusdam
-          saepe corporis? Aspernatur explicabo tenetur ad accusantium possimus
-          delectus pariatur amet adipisci quos libero. Necessitatibus in ad,
-          quos doloribus sit inventore!
-        </p>
-        <div class="flex-row">
-          <button
-            class="button-success btn-small"
-            id="readButton9"
-            onclick="toggleText(9, this.id)"
-          >
-            Read More
-          </button>
-          <a
-            href="./pages/viewProject.html?project=project9"
-            class="button-theme"
-            >View Project</a
-          >
+          <a href="./pages/viewProject.html?project=cleanWater">
+            View Project
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+          </a>
         </div>
       </div>
     </div>
-    <!-- Cards section ends -->
 
-    <!-- Statistics section starts -->
-    <div class="statistics-container">
-      <div class="statistic" data-value="50000">
-        <i class="fa-solid fa-user-group"></i>
-        <h3>0</h3>
-        <p>People Impacted</p>
-      </div>
-      <div class="statistic" data-value="100">
-        <i class="fa-solid fa-diagram-project"></i>
-        <h3>0</h3>
-        <p>Projects Completed</p>
-      </div>
-      <div class="statistic" data-value="500">
-        <i class="fa-solid fa-handshake-angle"></i>
-        <h3>0</h3>
-        <p>Volunteers</p>
-      </div>
-      <div class="statistic" data-value="1000">
-        <i class="fa-solid fa-hand-holding-dollar"></i>
-        <h3>0</h3>
-        <p>Donations</p>
+    <!--  
+    <div class="card-container" id="project4">
+      <img id="project4-img" src="https://source.unsplash.com/featured/?hospital" alt="card-image" />
+      <h4 id="project4-title">Card Template Heading for project 4</h4>
+      <p id="project4-description" class="content limited">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos
+        praesentium ratione atque sapiente dolore, quia nulla excepturi
+        tenetur blanditiis corporis quis ea non id vero impedit enim
+        distinctio minus. Magnam ab explicabo vitae suscipit facilis
+        exercitationem dolorem, labore nobis quo adipisci deserunt aliquid.
+        Neque, dignissimos voluptas! Commodi ipsam adipisci repellendus. Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Pariatur veniam
+        deleniti nemo neque vero dignissimos quae illo, distinctio animi quo,
+        similique recusandae ut, veritatis reprehenderit? Saepe, tenetur
+        quisquam. Ullam corrupti voluptatibus perferendis ab. Reiciendis
+        exercitationem accusamus fugit laudantium blanditiis asperiores eaque
+        mollitia id earum labore nobis, sequi, ut alias, culpa dicta eligendi
+        cum unde tempore error! Fuga, deserunt sunt quisquam, repudiandae ab
+        quasi tenetur, ratione deleniti perspiciatis est doloremque ut minus
+        incidunt alias tempora perferendis doloribus aut sapiente quibusdam
+        saepe corporis? Aspernatur explicabo tenetur ad accusantium possimus
+        delectus pariatur amet adipisci quos libero. Necessitatibus in ad,
+        quos doloribus sit inventore!
+      </p>
+      <div class="flex-row">
+        <button class="button-success btn-small" id="readButton4" onclick="toggleText(4, this.id)">
+          Read More
+        </button>
+        <a href="./pages/viewProject.html?project=project4" class="button-theme">View Project</a>
       </div>
     </div>
-    <!-- Statistics section ends -->
-
-    <!-- Testinmonials section starts -->
-    <section class="testimonials-container">
-      <h2>Testimonials</h2>
-      <div class="testimonial">
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil sed,
-          quibusdam rem architecto officia temporibus incidunt, autem animi
-          ratione error voluptates corporis sequi deserunt saepe! Distinctio
-          quod atque inventore suscipit a molestiae alias. Optio porro ducimus,
-          libero suscipit nihil modi nisi mollitia! Quasi facilis enim tempora,
-          accusamus cupiditate deleniti odio, aliquam voluptatum ex perferendis
-        </p>
-        <div class="flex-row">
-          <img
-            src="https://source.unsplash.com/featured/?man"
-            alt="profile-picture"
-          />
-          <div class="flex-column">
-            <h4>Robinson Cruzo</h4>
-            <div class="flex-row">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-            </div>
-          </div>
-          <i
-            style="font-size: 50px; align-self: center"
-            class="fa-brands fa-facebook"
-          ></i>
-        </div>
-      </div>
-      <div class="testimonial">
-        <p>
-          Hic dolore esse alias commodi nisi eaque iste, dolores eum veniam
-          ducimus assumenda nesciunt, officia provident necessitatibus fugiat
-          corporis reiciendis? Rerum sunt, alias a delectus accusamus in
-          pariatur quasi, omnis nihil quibusdam modi laborum incidunt sit neque
-          fuga voluptas explicabo unde voluptatem laudantium! Lorem, ipsum dolor
-          sit amet consectetur adipisicing elit. Optio non maiores harum sed.
-        </p>
-        <div class="flex-row">
-          <img
-            src="https://source.unsplash.com/featured/?woman"
-            alt="profile-picture"
-          />
-          <div class="flex-column">
-            <h4>Lara Croft</h4>
-            <div class="flex-row">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-            </div>
-          </div>
-          <i
-            style="font-size: 50px; align-self: center"
-            class="fa-brands fa-facebook"
-          ></i>
-        </div>
-      </div>
-      <div class="testimonial">
-        <p>
-          ut quia beatae. Numquam, excepturi dolorem! Incidunt laboriosam modi
-          reiciendis corporis deserunt voluptatibus quasi architecto aliquid
-          deleniti maxime odio distinctio sit inventore accusantium vel delectus
-          libero nam tempore, eaque iusto ut et recusandae natus officia?
-          Aliquam voluptate tempora dolores! Quo, praesentium odit sequi fugit
-          quas libero magni quis nostrum, mollitia exercitationem
-        </p>
-        <div class="flex-row">
-          <img
-            src="https://source.unsplash.com/featured/?profile-picture"
-            alt="profile-picture"
-          />
-          <div class="flex-column">
-            <h4>John Doe</h4>
-            <div class="flex-row">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-            </div>
-          </div>
-          <i
-            style="font-size: 50px; align-self: center"
-            class="fa-brands fa-facebook"
-          ></i>
-        </div>
-      </div>
-      <div class="flex-row navigation-buttons">
-        <button onclick="navigateTestimonials('prev')">
-          <i class="fa-solid fa-left-long"></i>
+    <div class="card-container" id="project5">
+      <img id="project5-img" src="https://source.unsplash.com/featured/?charity" alt="card-image" />
+      <h4 id="project5-title">Card Template Heading for project 5</h4>
+      <p id="project5-description" class="content limited">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos
+        praesentium ratione atque sapiente dolore, quia nulla excepturi
+        tenetur blanditiis corporis quis ea non id vero impedit enim
+        distinctio minus. Magnam ab explicabo vitae suscipit facilis
+        exercitationem dolorem, labore nobis quo adipisci deserunt aliquid.
+        Neque, dignissimos voluptas! Commodi ipsam adipisci repellendus. Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Pariatur veniam
+        deleniti nemo neque vero dignissimos quae illo, distinctio animi quo,
+        similique recusandae ut, veritatis reprehenderit? Saepe, tenetur
+        quisquam. Ullam corrupti voluptatibus perferendis ab. Reiciendis
+        exercitationem accusamus fugit laudantium blanditiis asperiores eaque
+        mollitia id earum labore nobis, sequi, ut alias, culpa dicta eligendi
+        cum unde tempore error! Fuga, deserunt sunt quisquam, repudiandae ab
+        quasi tenetur, ratione deleniti perspiciatis est doloremque ut minus
+        incidunt alias tempora perferendis doloribus aut sapiente quibusdam
+        saepe corporis? Aspernatur explicabo tenetur ad accusantium possimus
+        delectus pariatur amet adipisci quos libero. Necessitatibus in ad,
+        quos doloribus sit inventore!
+      </p>
+      <div class="flex-row">
+        <button class="button-success btn-small" id="readButton5" onclick="toggleText(5, this.id)">
+          Read More
         </button>
-        <button onclick="navigateTestimonials('next')">
-          <i class="fa-solid fa-right-long"></i>
+        <a href="./pages/viewProject.html?project=project5" class="button-theme">View Project</a>
+      </div>
+    </div>
+    <div class="card-container" id="project6">
+      <img id="project6-img" src="https://source.unsplash.com/featured/?donation" alt="card-image" />
+      <h4 id="project6-title">Card Template Heading for project 6</h4>
+      <p id="project6-description" class="content limited">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos
+        praesentium ratione atque sapiente dolore, quia nulla excepturi
+        tenetur blanditiis corporis quis ea non id vero impedit enim
+        distinctio minus. Magnam ab explicabo vitae suscipit facilis
+        exercitationem dolorem, labore nobis quo adipisci deserunt aliquid.
+        Neque, dignissimos voluptas! Commodi ipsam adipisci repellendus. Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Pariatur veniam
+        deleniti nemo neque vero dignissimos quae illo, distinctio animi quo,
+        similique recusandae ut, veritatis reprehenderit? Saepe, tenetur
+        quisquam. Ullam corrupti voluptatibus perferendis ab. Reiciendis
+        exercitationem accusamus fugit laudantium blanditiis asperiores eaque
+        mollitia id earum labore nobis, sequi, ut alias, culpa dicta eligendi
+        cum unde tempore error! Fuga, deserunt sunt quisquam, repudiandae ab
+        quasi tenetur, ratione deleniti perspiciatis est doloremque ut minus
+        incidunt alias tempora perferendis doloribus aut sapiente quibusdam
+        saepe corporis? Aspernatur explicabo tenetur ad accusantium possimus
+        delectus pariatur amet adipisci quos libero. Necessitatibus in ad,
+        quos doloribus sit inventore!
+      </p>
+      <div class="flex-row">
+        <button class="button-success btn-small" id="readButton6" onclick="toggleText(6, this.id)">
+          Read More
         </button>
+        <a href="./pages/viewProject.html?project=project6" class="button-theme">View Project</a>
       </div>
-    </section>
-    <!-- Testinmonials section ends -->
-<!-- Social Media Section Starts -->
-<section class="social-media-details">
-  <h1>Follow Us On Social Media</h1>
-  <div class="social-media-flex">
-    <a class="social-media-detail" target="_blank" href="https://www.facebook.com/hyemathkashmir">
+    </div>
+    <div class="card-container" id="project7">
+      <img id="project7-img" src="https://source.unsplash.com/featured/?kits" alt="card-image" />
+      <h4 id="project7-title">Card Template Heading of project 7</h4>
+      <p class="content limited" id="project7-description">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos
+        praesentium ratione atque sapiente dolore, quia nulla excepturi
+        tenetur blanditiis corporis quis ea non id vero impedit enim
+        distinctio minus. Magnam ab explicabo vitae suscipit facilis
+        exercitationem dolorem, labore nobis quo adipisci deserunt aliquid.
+        Neque, dignissimos voluptas! Commodi ipsam adipisci repellendus. Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Pariatur veniam
+        deleniti nemo neque vero dignissimos quae illo, distinctio animi quo,
+        similique recusandae ut, veritatis reprehenderit? Saepe, tenetur
+        quisquam. Ullam corrupti voluptatibus perferendis ab. Reiciendis
+        exercitationem accusamus fugit laudantium blanditiis asperiores eaque
+        mollitia id earum labore nobis, sequi, ut alias, culpa dicta eligendi
+        cum unde tempore error! Fuga, deserunt sunt quisquam, repudiandae ab
+        quasi tenetur, ratione deleniti perspiciatis est doloremque ut minus
+        incidunt alias tempora perferendis doloribus aut sapiente quibusdam
+        saepe corporis? Aspernatur explicabo tenetur ad accusantium possimus
+        delectus pariatur amet adipisci quos libero. Necessitatibus in ad,
+        quos doloribus sit inventore!
+      </p>
       <div class="flex-row">
-        <i class="fa-brands fa-facebook"></i>
-        <h3>Facebook</h3>
+        <button class="button-success btn-small" id="readButton7" onclick="toggleText(7, this.id)">
+          Read More
+        </button>
+        <a href="./pages/viewProject.html?project=project7" class="button-theme">View Project</a>
       </div>
-    </a>
-    <a class="social-media-detail" target="_blank" href="http://www.instagram.com/hyemathkashmir">
+    </div>
+    <div class="card-container" id="project8">
+      <img id="project8-img" src="https://source.unsplash.com/featured/?help" alt="card-image" />
+      <h4 id="project8-title">Card Template Heading for project 8</h4>
+      <p id="project8-description" class="content limited">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos
+        praesentium ratione atque sapiente dolore, quia nulla excepturi
+        tenetur blanditiis corporis quis ea non id vero impedit enim
+        distinctio minus. Magnam ab explicabo vitae suscipit facilis
+        exercitationem dolorem, labore nobis quo adipisci deserunt aliquid.
+        Neque, dignissimos voluptas! Commodi ipsam adipisci repellendus. Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Pariatur veniam
+        deleniti nemo neque vero dignissimos quae illo, distinctio animi quo,
+        similique recusandae ut, veritatis reprehenderit? Saepe, tenetur
+        quisquam. Ullam corrupti voluptatibus perferendis ab. Reiciendis
+        exercitationem accusamus fugit laudantium blanditiis asperiores eaque
+        mollitia id earum labore nobis, sequi, ut alias, culpa dicta eligendi
+        cum unde tempore error! Fuga, deserunt sunt quisquam, repudiandae ab
+        quasi tenetur, ratione deleniti perspiciatis est doloremque ut minus
+        incidunt alias tempora perferendis doloribus aut sapiente quibusdam
+        saepe corporis? Aspernatur explicabo tenetur ad accusantium possimus
+        delectus pariatur amet adipisci quos libero. Necessitatibus in ad,
+        quos doloribus sit inventore!
+      </p>
       <div class="flex-row">
-        <i class="fa-brands fa-instagram"></i>
-        <h3>Instagram</h3>
+        <button class="button-success btn-small" id="readButton8" onclick="toggleText(8, this.id)">
+          Read More
+        </button>
+        <a href="./pages/viewProject.html?project=project8" class="button-theme">View Project</a>
       </div>
-    </a>
-    <a class="social-media-detail" target="_blank" href="http://www.twitter.com/hyemathkashmir">
+    </div>
+    <div class="card-container" id="project9">
+      <img id="project9-img" src="https://source.unsplash.com/featured/?medical" alt="card-image" />
+      <h4 id="project9-title">Card Template Heading for project 9</h4>
+      <p id="project9-description" class="content limited">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos
+        praesentium ratione atque sapiente dolore, quia nulla excepturi
+        tenetur blanditiis corporis quis ea non id vero impedit enim
+        distinctio minus. Magnam ab explicabo vitae suscipit facilis
+        exercitationem dolorem, labore nobis quo adipisci deserunt aliquid.
+        Neque, dignissimos voluptas! Commodi ipsam adipisci repellendus. Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Pariatur veniam
+        deleniti nemo neque vero dignissimos quae illo, distinctio animi quo,
+        similique recusandae ut, veritatis reprehenderit? Saepe, tenetur
+        quisquam. Ullam corrupti voluptatibus perferendis ab. Reiciendis
+        exercitationem accusamus fugit laudantium blanditiis asperiores eaque
+        mollitia id earum labore nobis, sequi, ut alias, culpa dicta eligendi
+        cum unde tempore error! Fuga, deserunt sunt quisquam, repudiandae ab
+        quasi tenetur, ratione deleniti perspiciatis est doloremque ut minus
+        incidunt alias tempora perferendis doloribus aut sapiente quibusdam
+        saepe corporis? Aspernatur explicabo tenetur ad accusantium possimus
+        delectus pariatur amet adipisci quos libero. Necessitatibus in ad,
+        quos doloribus sit inventore!
+      </p>
       <div class="flex-row">
-        <i class="fa-brands fa-square-x-twitter"></i>
-        <h3>Twitter/X</h3>
+        <button class="button-success btn-small" id="readButton9" onclick="toggleText(9, this.id)">
+          Read More
+        </button>
+        <a href="./pages/viewProject.html?project=project9" class="button-theme">View Project</a>
       </div>
-    </a>
-    <a  class="social-media-detail" target="_blank" href="https://www.linkedin.com/company/hyemath-kashmir/">
-      <div class="flex-row">
-        <i class="fa-brands fa-linkedin"></i>
-        <h3>LinkedIn</h3>
-      </div>
-    </a>
+    </div>
+    -->
   </div>
-</section>
-<!-- Social Media Section ends -->
+  <!-- Cards section ends -->
 
-    <!-- Embedded Google Maps Location Starts -->
-    <section class="google-maps-container">
-      <h1>
-        <span><i class="fa-solid fa-location-dot"></i></span> Find Us On Google
-        Maps
-      </h1>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6609.952209052839!2d74.80040070201247!3d34.07012680523536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e18f96b387110d%3A0x3f279be250eb08ff!2sLal%20Chowk%2C%20Srinagar%20190001!5e0!3m2!1sen!2sin!4v1712332304712!5m2!1sen!2sin"
-        width="600"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </section>
-    <!-- Embedded Google Maps Location Ends -->
+  <!-- Statistics section starts -->
+  <div class="statistics-container">
+    <div class="statistic" data-value="50000">
+      <i class="fa-solid fa-user-group"></i>
+      <h3>0</h3>
+      <p>People Impacted</p>
+    </div>
+    <div class="statistic" data-value="100">
+      <i class="fa-solid fa-diagram-project"></i>
+      <h3>0</h3>
+      <p>Projects Completed</p>
+    </div>
+    <div class="statistic" data-value="500">
+      <i class="fa-solid fa-handshake-angle"></i>
+      <h3>0</h3>
+      <p>Volunteers</p>
+    </div>
+    <div class="statistic" data-value="1000">
+      <i class="fa-solid fa-hand-holding-dollar"></i>
+      <h3>0</h3>
+      <p>Donations</p>
+    </div>
+  </div>
+  <!-- Statistics section ends -->
 
-    <!-- Footer Starts -->
-    <footer class="footer">
-      <div class="company-name">
-        <img src="./assets/images/logo3.png" alt="Website Logo" />
-        <h4>Company Title</h4>
-      </div>
-      <ul class="contact-details">
+  <!-- Testinmonials section starts -->
+  <section class="testimonials-container">
+    <h2>Testimonials</h2>
+    <div class="testimonial">
+      <img src="https://source.unsplash.com/featured/?profile-picture" alt="testimonial-image">
+      <strong>Robinson Cruzo</strong>
+      <h3 class="testimonial-heading">
+         I am so grateful for the work that Hyemath Kashmir is doing.
+      </h3>
+      <p class="testimonial-text">
+        I am so grateful for the work that Hyemath Kashmir is doing. They are
+        making a real difference in the lives of people who need it most. I
+        have seen firsthand the impact of their projects, and I am inspired by
+        their dedication and commitment to helping others. I am proud to
+        support their work and look forward to seeing the positive change they
+        continue to create
+      </p>
+    </div>
+    <div class="testimonial">
+      <img src="https://source.unsplash.com/featured/?woman" alt="testimonial-image">
+      <strong>Emily Johnson</strong>
+      <h3 class="testimonial-heading">
+        Hyemath Kashmir's dedication is truly remarkable.
+      </h3>
+      <p class="testimonial-text">
+        I am continuously impressed by the dedication and compassion demonstrated by the team at Hyemath Kashmir. Their unwavering commitment to making a positive impact in the community is truly remarkable. Through their innovative projects and tireless efforts, they are changing lives and spreading hope to those who need it most. It's an honor to support such an inspiring organization.
+      </p>
+    </div>
+    
+    <div class="testimonial">
+      <img src="https://source.unsplash.com/featured/?man" alt="testimonial-image">
+      <strong>Michael Smith</strong>
+      <h3 class="testimonial-heading">
+        Hyemath Kashmir goes above and beyond.
+      </h3>
+      <p class="testimonial-text">
+        I have been fortunate to witness firsthand the incredible work of Hyemath Kashmir. Their dedication to serving others knows no bounds, and they consistently go above and beyond to make a difference in the lives of those in need. Their innovative approach and unwavering commitment to their mission are truly inspiring. I am proud to support their efforts and look forward to seeing the continued impact they will undoubtedly have on our community.
+      </p>
+    </div>
+    
+    <div class="flex-row navigation-buttons">
+      <button onclick="navigateTestimonials('prev')">
+        <i class="fa-solid fa-left-long"></i>
+      </button>
+      <button onclick="navigateTestimonials('next')">
+        <i class="fa-solid fa-right-long"></i>
+      </button>
+    </div>
+  </section>
+  <!-- Testinmonials section ends -->
+  <!-- Social Media Section Starts -->
+  <section class="social-media-details">
+    <h1>Follow Us On Social Media</h1>
+    <div class="social-media-flex">
+      <a class="social-media-detail" target="_blank" href="https://www.facebook.com/hyemathkashmir">
+        <div class="flex-row">
+          <i class="fa-brands fa-facebook"></i>
+          <h3>Facebook</h3>
+        </div>
+      </a>
+      <a class="social-media-detail" target="_blank" href="http://www.instagram.com/hyemathkashmir">
+        <div class="flex-row">
+          <i class="fa-brands fa-instagram"></i>
+          <h3>Instagram</h3>
+        </div>
+      </a>
+      <a class="social-media-detail" target="_blank" href="http://www.twitter.com/hyemathkashmir">
+        <div class="flex-row">
+          <i class="fa-brands fa-square-x-twitter"></i>
+          <h3>Twitter/X</h3>
+        </div>
+      </a>
+      <a class="social-media-detail" target="_blank" href="https://www.linkedin.com/company/hyemath-kashmir/">
+        <div class="flex-row">
+          <i class="fa-brands fa-linkedin"></i>
+          <h3>LinkedIn</h3>
+        </div>
+      </a>
+    </div>
+  </section>
+  <!-- Social Media Section ends -->
+
+  <!-- Embedded Google Maps Location Starts -->
+  <section class="google-maps-container">
+    <h1>
+      <span><i class="fa-solid fa-location-dot"></i></span> Find Us On Google
+      Maps
+    </h1>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6609.952209052839!2d74.80040070201247!3d34.07012680523536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e18f96b387110d%3A0x3f279be250eb08ff!2sLal%20Chowk%2C%20Srinagar%20190001!5e0!3m2!1sen!2sin!4v1712332304712!5m2!1sen!2sin"
+      width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+  <!-- Embedded Google Maps Location Ends -->
+
+  <!-- Footer Starts -->
+  <footer class="footer">
+    <div class="company-name">
+      <img src="./assets/images/logo3.png" alt="Website Logo" />
+      <h4>Company Title</h4>
+    </div>
+    <ul class="contact-details">
+      <li>
+        <i class="fa-solid fa-location-dot"></i>&nbspAddress, Srinagar - Jammu
+        and Kashmir - 190001
+      </li>
+      <li><i class="fa-solid fa-phone"></i>&nbsp+91 1234567890</li>
+      <li><i class="fa-solid fa-phone"></i>&nbsp+91 3234567290</li>
+      <li>
+        <i class="fa-solid fa-envelope"></i>&nbspcompanyEmail@example.com
+      </li>
+    </ul>
+
+    <ul class="navigation">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./pages/aboutUs.html">About Us</a></li>
+      <li><a href="./pages/contactUs.html">Contact Us</a></li>
+      <li><a href="./pages/bankingDetails.html">Banking Details</a></li>
+    </ul>
+
+    <div class="social-media-container">
+      <h3>Follow Us On</h3>
+      <ul class="social-media">
         <li>
-          <i class="fa-solid fa-location-dot"></i>&nbspAddress, Srinagar - Jammu
-          and Kashmir - 190001
+          <i class="fa-brands fa-facebook"></i>&nbsp<a target="_blank" href="https://www.facebook.com/hyemathkashmir 
+            ">Facebook</a>
         </li>
-        <li><i class="fa-solid fa-phone"></i>&nbsp+91 1234567890</li>
-        <li><i class="fa-solid fa-phone"></i>&nbsp+91 3234567290</li>
         <li>
-          <i class="fa-solid fa-envelope"></i>&nbspcompanyEmail@example.com
+          <i class="fa-brands fa-instagram"></i>&nbsp<a target="_blank" href="https://www.instagram.com/hyemathkashmir
+            ">Instagram</a>
+        </li>
+        <li>
+          <i class="fa-brands fa-square-x-twitter"></i>&nbsp<a target="_blank" href="https://www.twitter.com/hyemathkashmir
+            ">Twitter/X</a>
+        </li>
+        <li>
+          <i class="fa-brands fa-linkedin"></i>&nbsp<a target="_blank"
+            href="https://www.linkedin.com/company/hyemath-kashmir/">LinnkedIn</a>
         </li>
       </ul>
-      <div class="social-media-container">
-        <h3>Follow Us On</h3>
-        <ul class="social-media">
-          <li>
-            <i class="fa-brands fa-facebook"></i>&nbsp<a
-              target="_blank"
-              href="https://www.facebook.com/hyemathkashmir 
-            "
-              >Facebook</a
-            >
-          </li>
-          <li>
-            <i class="fa-brands fa-instagram"></i>&nbsp<a
-              target="_blank"
-              href="https://www.instagram.com/hyemathkashmir
-            "
-              >Instagram</a
-            >
-          </li>
-          <li>
-            <i class="fa-brands fa-square-x-twitter"></i>&nbsp<a
-              target="_blank"
-              href="https://www.twitter.com/hyemathkashmir
-            "
-              >Twitter/X</a
-            >
-          </li>
-          <li>
-            <i class="fa-brands fa-linkedin"></i>&nbsp<a
-              target="_blank"
-              href="https://www.linkedin.com/company/hyemath-kashmir/"
-              >LinnkedIn</a
-            >
-          </li>
-        </ul>
-      </div>
-      <ul class="navigation">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./pages/aboutUs.html">About Us</a></li>
-        <li><a href="./pages/contactUs.html">Contact Us</a></li>
-        <li><a href="./pages/bankingDetails.html">Banking Details</a></li>
-      </ul>
-      <div class="ending">
-        <h3>All Donations are Tax-Deductable</h3>
-        <p>© 2021 Company Title. All Rights Reserved</p>
-        <button class="button-success">Donate Now</button>
-      </div>
-      <ul class="note">
-        <li>
-          Designed and developed with <i class="fa-solid fa-heart"></i> by UFK
-          Solutions
-        </li>
-      </ul>
-    </footer>
-    <!-- Footer Ends -->
-  </body>
+    </div>
+    <div class="ending">
+      <h3>All Donations are Tax-Deductable</h3>
+      <p>
+        "True power lies not in the strength of our possessions, but in our willingness to uplift the lives of those in
+        need, for in the act of giving, we discover the true wealth of our humanity."
+      </p>
+      <a href="./pages/bankingDetails.html" class="button-theme">Donate Now</a>
+    </div>
+    <ul class="note">
+      <li>
+        Designed and developed with <i class="fa-solid fa-heart"></i> by UFK
+        Solutions
+      </li>
+    </ul>
+  </footer>
+  <!-- Footer Ends -->
+</body>
+
 </html>

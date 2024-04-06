@@ -17,42 +17,57 @@
     </head>
   </head>
   <body>
-    <!-- Navbar Starts -->
-    <nav class="navbar" id="navbar">
-      <ul class="nav-logo-container">
-        <li class="nav-logo">
-          <img src="../assets/images/navLogo.png" alt="Website Logo" />
-        </li>
-      </ul>
-      <ul class="navbar-dropdown">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="aboutUs.html">About Us</a></li>
-        <li><a href="contactUs.html">Contact Us</a></li>
-        <li><a href="bankingDetails.html">Banking Details</a></li>
+       <!-- Navbar Starts -->
+  <nav class="navbar" id="navbar">
+    <ul class="nav-logo-container">
+      <li class="nav-logo">
+        <img src="../assets/images/navLogo.png" alt="Website Logo" />
+      </li>
+    </ul>
+    <ul class="navbar-dropdown">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="aboutUs.html">About Us</a></li>
+      <li><a href="contactUs.html">Contact Us</a></li>
+      <!--  
         <li>
           <div class="dropdown">
             <button onclick="toggleSubDropdown()" class="dropdown-toggle">
               <i id="dropdownIcon" class="fa-solid fa-plus"></i> &nbsp Services
-            </button>
+            </button>  
             <ul style="display: none" id="dropdownMenu" class="dropdown-menu">
               <li><a href="#">Service 1</a></li>
               <li><a href="#">Service 2</a></li>
               <li><a href="#">Service 3</a></li>
             </ul>
+            
           </div>
         </li>
-      </ul>
-      <ul class="navbar-subdivision">
-        <li><button>Donate</button></li>
-        <li id="icon-bars">
-          <i
-            onclick="toggleDropdown('navbar-dropdown')"
-            class="fa-solid fa-bars"
-          ></i>
-        </li>
-      </ul>
-    </nav>
-    <!-- Navbar ends -->
+      -->
+    </ul>
+    <ul>
+      <li><a class="donate-btn" href="bankingDetails.html">Donate</a></li>
+    </ul>
+    <ul class="nav-social-media">
+      <li>
+        <a href="http://www.instagram.com/hyemathkashmir" target="_blank" class="instagram-url"> <i
+            class="fa-brands fa-square-instagram"></i> </a>
+      </li>
+      <li>
+        <a href="http://www.facebook.com/hyemathkashmir" target="_blank" class="facebook-url"><i
+            class="fa-brands fa-square-facebook"></i></a>
+      </li>
+      <li>
+        <a href="http://www.twitter.com/hyemathkashmir" target="_blank" class="twitter-url"> <i
+            class="fa-brands fa-square-x-twitter"></i></a>
+      </li>
+    </ul>
+    <ul class="navbar-subdivision">
+      <li id="icon-bars">
+        <i onclick="toggleDropdown('navbar-dropdown')" class="fa-solid fa-bars"></i>
+      </li>
+    </ul>
+  </nav>
+  <!-- Navbar ends -->
 
     <!-- Project Section Starts -->
     <div class="project-container">
@@ -92,51 +107,69 @@
       </div>
     <!-- Project Section Ends -->
 
-    <!-- Footer Starts -->
-    <footer class="footer">
-      <div class="company-name">
-        <img src="../assets/images/logo3.png" alt="Website Logo" />
-        <h4>Company Title</h4>
-      </div>
-      <ul class="contact-details">
+       <!-- Footer Starts -->
+  <footer class="footer">
+    <div class="company-name">
+      <img src="../assets/images/logo3.png" alt="Website Logo" />
+      <h4>Company Title</h4>
+    </div>
+    <ul class="contact-details">
+      <li>
+        <i class="fa-solid fa-location-dot"></i>&nbspAddress, Srinagar - Jammu
+        and Kashmir - 190001
+      </li>
+      <li><i class="fa-solid fa-phone"></i>&nbsp+91 1234567890</li>
+      <li><i class="fa-solid fa-phone"></i>&nbsp+91 3234567290</li>
+      <li>
+        <i class="fa-solid fa-envelope"></i>&nbspcompanyEmail@example.com
+      </li>
+    </ul>
+
+    <ul class="navigation">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="aboutUs.html">About Us</a></li>
+      <li><a href="contactUs.html">Contact Us</a></li>
+      <li><a href="bankingDetails.html">Banking Details</a></li>
+      <li><a href="./pages/gallery.html">Gallery</a></li>
+    </ul>
+
+    <div class="social-media-container">
+      <h3>Follow Us On</h3>
+      <ul class="social-media">
         <li>
-          <i class="fa-solid fa-location-dot"></i>&nbspAddress, Srinagar - Jammu
-          and Kashmir - 190001
+          <i class="fa-brands fa-facebook"></i>&nbsp<a target="_blank" href="https://www.facebook.com/hyemathkashmir 
+            ">Facebook</a>
         </li>
-        <li><i class="fa-solid fa-phone"></i>&nbsp+91 1234567890</li>
-        <li><i class="fa-solid fa-phone"></i>&nbsp+91 3234567290</li>
         <li>
-          <i class="fa-solid fa-envelope"></i>&nbspcompanyEmail@example.com
+          <i class="fa-brands fa-instagram"></i>&nbsp<a target="_blank" href="https://www.instagram.com/hyemathkashmir
+            ">Instagram</a>
+        </li>
+        <li>
+          <i class="fa-brands fa-square-x-twitter"></i>&nbsp<a target="_blank" href="https://www.twitter.com/hyemathkashmir
+            ">Twitter/X</a>
+        </li>
+        <li>
+          <i class="fa-brands fa-linkedin"></i>&nbsp<a target="_blank"
+            href="https://www.linkedin.com/company/hyemath-kashmir/">LinnkedIn</a>
         </li>
       </ul>
-      <div class="social-media-container">
-        <h3>Follow Us On</h3>
-        <ul class="social-media">
-          <li><i class="fa-brands fa-facebook"></i>&nbspFacebook</li>
-          <li><i class="fa-brands fa-instagram"></i>&nbspInstagram</li>
-          <li><i class="fa-brands fa-twitter"></i>&nbspTwitter</li>
-          <li><i class="fa-brands fa-youtube"></i>&nbspYoutube</li>
-        </ul>
-      </div>
-      <ul class="navigation">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="aboutUs.html">About Us</a></li>
-        <li><a href="contactUs.html">Contact Us</a></li>
-        <li><a href="bankingDetails.html">Banking Details</a></li>
-      </ul>
-      <div class="ending">
-        <h3>All Donations are Tax-Deductable</h3>
-        <p>© 2021 Company Title. All Rights Reserved</p>
-        <button class="button-success">Donate Now</button>
-      </div>
-      <ul class="note">
-        <li>
-          Designed and developed with <i class="fa-solid fa-heart"></i> by UFK
-          Solutions
-        </li>
-      </ul>
-    </footer>
-    <!-- Footer Ends -->
+    </div>
+    <div class="ending">
+      <h3>All Donations are Tax-Deductable</h3>
+      <p>
+        "True power lies not in the strength of our possessions, but in our willingness to uplift the lives of those in
+        need, for in the act of giving, we discover the true wealth of our humanity."
+      </p>
+      <a href="bankingDetails.html" class="button-theme">Donate Now</a>
+    </div>
+    <ul class="note">
+      <li>
+        Designed and developed with <i class="fa-solid fa-heart"></i> by UFK
+        Solutions
+      </li>
+    </ul>
+  </footer>
+  <!-- Footer Ends -->
     <script type="text/javascript" src="../js/viewProject.js"></script>
   </body>
 </html>

@@ -27,6 +27,7 @@ function toggleSubDropdown() {
     }
 }
 
+/*
 document.addEventListener("click", function(event) {
     var navbar = document.getElementById("navbar");
     var dropdownMenu = document.getElementById("dropdownMenu");
@@ -38,6 +39,7 @@ document.addEventListener("click", function(event) {
         dropdownIcon.classList.add("fa-plus");
     }
 });
+*/
 
 // Header Js starts
 window.addEventListener("load", function() {
@@ -74,6 +76,12 @@ function toggleText(cardIndex, buttonId) {
     content.classList.remove('extended-limit');
     buttonText.textContent = 'Read More';
   }
+}
+
+
+function cardContainerClicked(card){
+  var url = card.getAttribute('data-url');
+  window.location = url;
 }
 
 // Cards section js ends
@@ -162,5 +170,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     testimonials[nextTestimonialIndex].style.display = 'flex';
   }
+
+  setInterval(function() {
+    navigateTestimonials('next');
+}, 5000);
+
+
 // Testimonials section js ends
 
