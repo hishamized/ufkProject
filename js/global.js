@@ -174,7 +174,34 @@ document.addEventListener('DOMContentLoaded', function() {
   setInterval(function() {
     navigateTestimonials('next');
 }, 5000);
-
-
 // Testimonials section js ends
+
+// Frequently asked questions js starts
+function toggleAnswer(answerId, questionId){
+  var dropdown = document.getElementById(answerId);
+  var question = document.getElementById(questionId);
+  var firstIcon = question.querySelector('i');
+  var secondIcon = question.querySelector('i:last-child');
+  var computedStyle = window.getComputedStyle(dropdown);
+
+  if (computedStyle.display === 'none' || dropdown.style.display === '') {
+    dropdown.style.display = 'block';
+    dropdown.style.height = dropdown.scrollHeight + 'px'; 
+    firstIcon.classList.remove('fa-plus');
+    firstIcon.classList.add('fa-minus');
+
+    secondIcon.classList.remove('fa-arrow-down');
+    secondIcon.classList.add('fa-arrow-up');
+  } else {
+    dropdown.style.height = '0';
+    firstIcon.classList.remove('fa-minus');
+    firstIcon.classList.add('fa-plus');
+    secondIcon.classList.remove('fa-arrow-up');
+    secondIcon.classList.add('fa-arrow-down');
+    setTimeout(function() {
+      dropdown.style.display = 'none';
+    }, 300); 
+  }
+}
+// Frequently asked questions js ends
 

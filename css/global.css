@@ -608,6 +608,46 @@ font-style: italic;
 }
 /* Testimonials section css ends */
 
+/* Frequent Questions css starts */
+.frequent-questions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: var(--var-gray-bg);
+    row-gap: 25px;
+}
+.frequent-questions h1{
+    text-transform: capitalize;
+}
+.frequent-questions .frequent-question{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    background-color: #FFFFFF;
+    padding: 20px 20px;
+    box-shadow: 0 5px 18px 3px rgba(0,0,0,.11);
+    width: 100%;
+    max-width: 70vw;
+}
+.frequent-questions .frequent-question .question-header{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all .3s;
+}
+.frequent-questions .frequent-question .question-answer{
+    height: 0;
+    text-align: center;
+    display: none;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+}
+/* Frequent Questions css ends */
+
 /* Media query only screen for desktop */
 @media only screen and (min-width: 768px){
    .navbar{
@@ -791,5 +831,8 @@ max-width: 50vw;
     justify-content: center;
     align-items: center;
     column-gap: 25px;
+}
+.frequent-questions .frequent-question{
+    max-width: 50vw;
 }
 }
