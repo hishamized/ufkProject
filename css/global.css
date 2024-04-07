@@ -608,6 +608,36 @@ font-style: italic;
 }
 /* Testimonials section css ends */
 
+/* Embdedded social media css starts */
+.embedded-social-media-container{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 50px;
+    row-gap: 50px;
+    padding: 30px 10px;
+}
+.embedded-social-media-container .embedded-social-media{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.embedded-social-media-container .embedded-social-media .embedded-social-media-code{
+   min-height: 450px;
+   width: 100%;
+   border-radius: 20px;
+   box-shadow: 0 5px 18px 3px rgba(0,0,0,.11);
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Embdedded social media css ends */
+
 /* Frequent Questions css starts */
 .frequent-questions{
     display: flex;
@@ -834,5 +864,10 @@ max-width: 50vw;
 }
 .frequent-questions .frequent-question{
     max-width: 50vw;
+}
+.embedded-social-media-container{
+flex-direction: row;
+column-gap: 20px;
+padding: 30px 30px;
 }
 }
