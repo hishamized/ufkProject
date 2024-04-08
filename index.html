@@ -8,13 +8,33 @@
   <!-- Font Awesome  -->
   <script src="https://kit.fontawesome.com/1bc2765d38.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./css/global.css" />
+  <link rel="stylesheet" href="./css/loadingScreen.css" />
   <script type="text/javascript" src="./js/global.js"></script>
+  <script type="text/javascript" src="./js/index.js"></script>
   <title>Home</title>
 </head>
 
+
 <body>
-  <!-- Facebook embedding code snippet starts -->
-  <div id="fb-root"></div>
+ <!-- Loading screen code starts -->
+ <div style="display: none;" class="loading-screen" id="loadingScreen">
+  <section class="container flex-center">
+    <div class="circle circle_1 flex-center">
+      <div class="circle circle_2 flex-center">
+          <div class="circle circle_3 flex-center">
+              <div class="ciecle circle_4 flex-center">
+                 <img id="logo" src="./assets/images/Artboard 11@4x.png" alt="logo">
+              </div>
+          </div>
+      </div>
+    </div>
+  </section>
+ </div>
+ <!-- Loading screen code ends -->
+  <div style="visibility: hidden;" id="content">
+
+<!-- Facebook embedding code snippet starts -->
+<div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0" nonce="kADi4ThM"></script>
   <!-- Facebook embedding code snippet starts -->
   <!-- Navbar Starts -->
@@ -877,6 +897,8 @@
     </ul>
   </footer>
   <!-- Footer Ends -->
+  </div>
+
 </body>
 
 </html>
