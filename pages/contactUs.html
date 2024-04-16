@@ -7,6 +7,7 @@
   <!-- Font Awesome  -->
   <script src="https://kit.fontawesome.com/1bc2765d38.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../css/global.css" />
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   <script type="text/javascript" src="../js/global.js"></script>
   <link rel="stylesheet" href="../css/contactUs.css" />
   <script type="text/javascript" src="../js/contactUs.js"></script>
@@ -18,7 +19,7 @@
   <nav class="navbar" id="navbar">
     <ul class="nav-logo-container">
       <li class="nav-logo">
-        <img src="../assets/images/navLogo.png" alt="Website Logo" />
+        <img onclick="homePageRedirect()" src="../assets/images/navLogo.png" alt="Website Logo" />
       </li>
     </ul>
     <ul class="navbar-dropdown">
@@ -100,7 +101,7 @@
           <i class="fa-solid fa-phone-volume"></i>
         </div>
         <div class="contact-detail-text">
-          +91 70064 72911 
+          +91 70064 72911
         </div>
       </div>
 
@@ -124,21 +125,27 @@
     </section>
     <!-- Contact Tiles section ends -->
     <!-- Contact us form starts -->
-    <form action="#" class="contact-us-form">
+    <form action="#" class="contact-us-form" onsubmit="return submitContactForm(event);">
       <h1>Contact Us</h1>
+      <input type="hidden" id="to_email" name="to_email" value="muhammadhishammi@gmail.com">
+      <input type="hidden" id="to_name" name="to_name" value="Hyemath_Kashmir">
       <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Enter Your Name" required />
+        <label for="from_name">Name</label>
+        <input type="text" id="from_name" name="from_name" placeholder="Enter Your Name" required />
       </div>
       <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Enter Your Email" required />
+        <label for="from_email">Email</label>
+        <input type="email" id="from_email" name="from_email" placeholder="Enter Your Email" required />
+      </div>
+      <div class="form-group">
+        <label for="from_phone"></label>
+        <input type="text" id="from_phone" name="from_phone" placeholder="Your Phone No.">
       </div>
       <div class="form-group">
         <label for="message">Message</label>
         <textarea rows="5" id="message" name="message" placeholder="Enter Your Message" required></textarea>
       </div>
-      <button type="submit" class="button-theme">Send Message</button>
+      <button id="contact-form-btn" type="submit" class="button-theme">Send Message</button>
     </form>
     <!-- Contact us form ends -->
   </div>
@@ -189,7 +196,8 @@
       <h3>Follow Us On</h3>
       <ul class="social-media">
         <li>
-          <i class="fa-brands fa-facebook"></i>&nbsp<a target="_blank" href="https://www.facebook.com/profile.php?id=100090103664480">Facebook</a>
+          <i class="fa-brands fa-facebook"></i>&nbsp<a target="_blank"
+            href="https://www.facebook.com/profile.php?id=100090103664480">Facebook</a>
         </li>
         <li>
           <i class="fa-brands fa-instagram"></i>&nbsp<a target="_blank" href="https://www.instagram.com/hyemathkashmir

@@ -63,6 +63,7 @@ window.addEventListener("load", function() {
 // Header Js ends
 
 // Cards section js starts
+/*
 function toggleText(cardIndex, buttonId) {
   var content = document.querySelectorAll('.content')[cardIndex - 1];
   var buttonText = document.getElementById(buttonId);
@@ -77,9 +78,13 @@ function toggleText(cardIndex, buttonId) {
     buttonText.textContent = 'Read More';
   }
 }
+*/
 
 
-function cardContainerClicked(card){
+function cardContainerClicked(card, event){
+  if(event.target.tagName === 'BUTTON' || event.target.tagName === 'I'){
+    return;
+  }
   var url = card.getAttribute('data-url');
   window.location = url;
 }
@@ -203,5 +208,89 @@ function toggleAnswer(answerId, questionId){
     }, 300); 
   }
 }
+
+// DOM content loaded
+document.addEventListener('DOMContentLoaded', function() {
+ // Code for setting frequuent questions height starts
+function setImageSectionHeight() {
+  var questionSection = document.getElementsByClassName("frequent-questions");
+  var height = questionSection[0].offsetHeight;
+  var imageSection = document.getElementsByClassName("image-section");
+  imageSection[0].style.height = height + 45 + "px";
+}
+setImageSectionHeight();
+// Code for setting frequuent questions height ends
+});
+
 // Frequently asked questions js ends
+
+
+function homePageRedirect() {
+  window.open("http://127.0.0.1:5500/index.html", "_self");
+}
+
+
+// JS for POP up contact js form starts
+function closePopUpContactForm(){
+  var popUpContactForm = document.getElementById('popUpContactForm');
+  popUpContactForm.style.display = 'none';
+
+}
+
+function openPopUpContactForm(){
+  var popUpContactForm = document.getElementById('popUpContactForm');
+  popUpContactForm.style.display = 'flex';
+  document.getElementById('contact-form-btn').disabled = false;
+}
+
+document.addEventListener('DOMContentLoaded', function(){
+setTimeout(openPopUpContactForm, 15000);
+});
+// JS for POP up contact js form ends
+
+
+// Email Js starts
+function submitContactForm(event){
+  console.log("Submitted");
+  emailjs.init("wUUWw7hz1nXjP5k1d"); // Initialize EmailJS with your User ID
+  
+  event.preventDefault(); // Prevent the form from submitting traditionally
+  
+  // Collect form data
+  var formData = {
+      from_name: document.getElementById('from_name').value,
+      from_email: document.getElementById('from_email').value,
+      message: document.getElementById('message').value,
+      to_email: document.getElementById('to_email').value,
+      to_name: document.getElementById('to_name').value,
+      reply_to: "Hyemath Kashmir"
+  };
+
+
+  
+  // Send email
+  emailjs.send("service_5jkclht", "template_zl6kik9", formData)
+      .then(function(response) {
+        var contactFormBtn = document.getElementById('contact-form-btn');
+      contactFormBtn.disabled = true;
+      contactFormBtn.textContent = 'Email Sent';
+      contactFormBtn.style.backgroundColor = 'grey';
+      alert('Email sent successfully!');
+      var popUpContactForm = document.getElementById('popUpContactForm');
+      popUpContactForm.style.display = 'none';
+
+      }, function(error) {
+         contactFormBtn = document.getElementById('contact-form-btn');
+      contactFormBtn.disabled = true;
+      contactFormBtn.textContent = 'Error!';
+      contactFormBtn.style.backgroundColor = 'red';
+          alert('Error sending email: ' + error);
+          
+      });
+      
+      return false;
+}
+
+// Email Js ends
+
 
