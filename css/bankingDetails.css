@@ -93,6 +93,10 @@
     object-fit: cover;
     border-radius: 5px;
 }
+.HDFC-banking-card, .HDFC-qr-code{
+    filter: blur(4px);
+}
+
 
 @media only screen and (min-width: 768px){
     .background-image-container{

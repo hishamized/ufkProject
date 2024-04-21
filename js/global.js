@@ -228,6 +228,9 @@ setImageSectionHeight();
 function homePageRedirect() {
   window.open("http://127.0.0.1:5500/index.html", "_self");
 }
+function bankingDetailsRedirect(){
+  window.open("http://127.0.0.1:5500/pages/bankingDetails.html", "_self");
+}
 
 
 // JS for POP up contact js form starts
