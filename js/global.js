@@ -225,11 +225,21 @@ setImageSectionHeight();
 // Frequently asked questions js ends
 
 
+function redirectToPage(page){
+  var absoluteUrl = window.location.href;
+  var baseUrl = absoluteUrl.substring(0, absoluteUrl.lastIndexOf("/") + 1);
+  var targetUrl = baseUrl + "pages/" + page + ".html";
+  window.open(targetUrl, "_self");
+}
 function homePageRedirect() {
-  window.open("http://127.0.0.1:5500/index.html", "_self");
+  var absoluteUrl = window.location.href;
+  window.open(absoluteUrl, "_self");
 }
 function bankingDetailsRedirect(){
-  window.open("http://127.0.0.1:5500/pages/bankingDetails.html", "_self");
+  var absoluteUrl = window.location.href;
+  var baseUrl = absoluteUrl.substring(0, absoluteUrl.lastIndexOf("/") + 1);
+  var targetUrl = baseUrl + "pages/banking-details.html";
+  window.open(targetUrl, "_self");
 }
 
 
