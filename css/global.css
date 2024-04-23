@@ -378,13 +378,14 @@ ul li a{
     align-items: center;
     margin: 25px 0px;
 }
-.introduction-text{
+.introduction-text p{
     text-align: justify;
 }
 
 .introduction-text h3{
     margin: 25px 0px;
     font-size: x-large;
+    text-align: left;
 }
 .introduction-text p{
     color: var(--var-light-text);
@@ -644,6 +645,8 @@ font-style: italic;
     justify-content: center;
     align-items: center;
     width: 100%;
+    max-height: 550px;
+    overflow: hidden;
 }
 .embedded-social-media-container .embedded-social-media .embedded-social-media-code{
    min-height: 450px;
