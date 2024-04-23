@@ -18,17 +18,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 var htmlDoc = parser.parseFromString(xhr.responseText, 'text/html');
                 var projectElement = htmlDoc.getElementById(projectId);
                 if (projectElement) {
-                    var baseURL = window.location.origin;
                     var imgSrc = projectElement.querySelector('#' + projectId + '-img').getAttribute('src');
-                    if (imgSrc.startsWith('.')) {
-                        imgSrc = imgSrc.slice(1); // Remove the first character (dot)
-                    }
-                    var fullImgSrc = baseURL + imgSrc;
+                    imgSrc = '.' + imgSrc;
                   var h4Text = projectElement.querySelector('#' + projectId + '-title').textContent;
                   var pText = projectElement.querySelector('#' + projectId + '-description').textContent;
 
                   var projectImage = document.querySelector('.project-image #project-img');
-                  projectImage.src = fullImgSrc;
+                  projectImage.src = imgSrc;
 
                   var projectDetails = document.querySelector('.project-details');
                   projectDetails.querySelector('#project-title').textContent = h4Text;
