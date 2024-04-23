@@ -18,7 +18,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 var htmlDoc = parser.parseFromString(xhr.responseText, 'text/html');
                 var projectElement = htmlDoc.getElementById(projectId);
                 if (projectElement) {
-                  var imgSrc = projectElement.querySelector('#' + projectId + '-img').src;
+                    var baseURL = window.location.origin;
+                    var imgSrc = baseURL + projectElement.querySelector('#' + projectId + '-img').getAttribute('src');
                   var h4Text = projectElement.querySelector('#' + projectId + '-title').textContent;
                   var pText = projectElement.querySelector('#' + projectId + '-description').textContent;
 

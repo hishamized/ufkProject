@@ -110,7 +110,7 @@ ul li a{
     align-items: center;
 }
 .navbar .nav-logo img{
-    width: 75%;
+    width: 85%;
 }
 .navbar ul li .donate-btn{
  background-color: var(--var-theme-blue);
