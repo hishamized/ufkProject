@@ -47,9 +47,9 @@ window.addEventListener("load", function() {
   var header = document.querySelector(".header");
   header.style.marginTop = navbarHeight + "px";
   var images = [
-    "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/featured/?kids')",
-    "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/featured/?poor')",
-    "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/featured/?poverty')"
+    "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/backgroundImages/slider1.jpg')",
+    "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/backgroundImages/slider1.jpg')",
+    "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/backgroundImages/slider1.jpg')"
   ];
   var currentIndex = 0;
 

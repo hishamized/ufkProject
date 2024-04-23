@@ -109,6 +109,9 @@ ul li a{
     justify-content: space-between;
     align-items: center;
 }
+.nav-logo-container{
+ padding: 0%;
+}
 .navbar .nav-logo img{
     width: 85%;
 }
@@ -184,7 +187,7 @@ ul li a{
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/featured/?kids');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/backgroundImages/slider1.jpg');
     background-size: cover;
     background-position: center;
     padding: 45px 25px;
@@ -203,6 +206,9 @@ ul li a{
        padding: 5px;
        backdrop-filter: blur(10px);
        font-weight: 700; 
+    }
+    .header h1:nth-of-type(2){
+        display: none;
     }
 /* Header CSS Ends */
 
@@ -845,12 +851,15 @@ z-index: 4;
 }
 .navbar .nav-logo-container{
     width: 100%;
+    padding-left: 20px;
 }
    #icon-bars{
     display: none;
    }
 
-
+   .header h1:nth-of-type(2){
+    display: block;
+}
    .footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
