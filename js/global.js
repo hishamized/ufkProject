@@ -238,7 +238,7 @@ function homePageRedirect() {
 function bankingDetailsRedirect(){
   var absoluteUrl = window.location.href;
   var baseUrl = absoluteUrl.substring(0, absoluteUrl.lastIndexOf("/") + 1);
-  var targetUrl = baseUrl + "pages/banking-details.html";
+  var targetUrl = baseUrl + "pages/bankingDetails.html";
   window.open(targetUrl, "_self");
 }
 
