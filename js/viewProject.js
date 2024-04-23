@@ -19,12 +19,16 @@ document.addEventListener("DOMContentLoaded", function () {
                 var projectElement = htmlDoc.getElementById(projectId);
                 if (projectElement) {
                     var baseURL = window.location.origin;
-                    var imgSrc = baseURL + projectElement.querySelector('#' + projectId + '-img').getAttribute('src');
+                    var imgSrc = projectElement.querySelector('#' + projectId + '-img').getAttribute('src');
+                    if (imgSrc.startsWith('.')) {
+                        imgSrc = imgSrc.slice(1); // Remove the first character (dot)
+                    }
+                    var fullImgSrc = baseURL + imgSrc;
                   var h4Text = projectElement.querySelector('#' + projectId + '-title').textContent;
                   var pText = projectElement.querySelector('#' + projectId + '-description').textContent;
 
                   var projectImage = document.querySelector('.project-image #project-img');
-                  projectImage.src = imgSrc;
+                  projectImage.src = fullImgSrc;
 
                   var projectDetails = document.querySelector('.project-details');
                   projectDetails.querySelector('#project-title').textContent = h4Text;
