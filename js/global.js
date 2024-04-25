@@ -265,7 +265,7 @@ setTimeout(openPopUpContactForm, 15000);
 // Email Js starts
 function submitContactForm(event){
   console.log("Submitted");
-  emailjs.init("wUUWw7hz1nXjP5k1d"); // Initialize EmailJS with your User ID
+  emailjs.init("z_4Ao3rnUL_u42sIq"); // Initialize EmailJS with your User ID
   
   event.preventDefault(); // Prevent the form from submitting traditionally
   
@@ -282,7 +282,7 @@ function submitContactForm(event){
 
   
   // Send email
-  emailjs.send("service_5jkclht", "template_zl6kik9", formData)
+  emailjs.send("service_bptvudc", "template_l4gxn43", formData)
       .then(function(response) {
         var contactFormBtn = document.getElementById('contact-form-btn');
       contactFormBtn.disabled = true;
