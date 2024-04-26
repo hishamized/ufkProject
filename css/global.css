@@ -686,7 +686,7 @@ font-style: italic;
 .frequent-questions .image-section{
     display: none;
  width: 100%;
- background-image: url('https://source.unsplash.com/featured/?questions');
+ background-image: url('../assets/backgroundImages/faq.jpg');
  background-position: center;
  background-size: cover;
  background-repeat: no-repeat;
