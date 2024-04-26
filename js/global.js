@@ -231,9 +231,11 @@ function redirectToPage(page){
   var targetUrl = baseUrl + "pages/" + page + ".html";
   window.open(targetUrl, "_self");
 }
+
 function homePageRedirect() {
-  var absoluteUrl = window.location.href;
-  window.open(absoluteUrl, "_self");
+  var baseURL = window.location.origin; 
+  var homePageURL = baseURL + "/index.html"; 
+  window.location.href = homePageURL;
 }
 function bankingDetailsRedirect(){
   var absoluteUrl = window.location.href;
