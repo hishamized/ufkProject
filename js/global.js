@@ -275,6 +275,7 @@ function submitContactForm(event){
   var formData = {
       from_name: document.getElementById('from_name').value,
       from_email: document.getElementById('from_email').value,
+      from_phone: document.getElementById('from_phone').value,
       message: document.getElementById('message').value,
       to_email: document.getElementById('to_email').value,
       to_name: document.getElementById('to_name').value,
